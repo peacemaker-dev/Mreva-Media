@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Gallery - Mreva Media</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <!-- NAVIGATION PANEL -->
+    <div class="nav-panel">
+      <img src="images/white-logo.png" alt="Mreva Media Logo" width="90"/>
+      <a class="nav-links" href="index.html">Home</a>
+      <a class="nav-links" href="about.html">About</a>
+      <a class="nav-links" href="services.html">Services</a>
+      <a class="nav-links" href="gallery.html">Gallery</a>
+      <a class="nav-links" href="contact.html">Contact</a>
+      <a class="nav-links" href="faq.html">FAQs</a>
+    </div>
+
+    <!-- HERO SECTION -->
+    <section class="hero">
+      <h1>Captured with Heart, Shared with You</h1>
+      <p>Explore our creative lens - where passion, culture, and professionalism meet.</p>
+    </section>
+
+    <!-- MINI GALLERIES -->
+    <section class="mini-gallery">
+      <h4>Photoshoot Moments</h4>
+      <div class="gallery-grid">
+        <img src="images/graduation.jpg" alt="Graduation moment" loading="lazy" onclick="openModal(this.src)">
+        <img src="images/photoshoot.jpg" alt="Photoshoot moment" loading="lazy" onclick="openModal(this.src)">
+        <img src="images/photoshoot2.jpg" alt="Photoshoot moment" loading="lazy" onclick="openModal(this.src)">
+      </div>
+    </section>
+
+    <section class="mini-gallery">
+      <h4>Event</h4>
+      <div class="gallery-grid">
+        <img src="images/kelvin-momo.jpg" alt="Kelvin Momo" loading="lazy" onclick="openModal(this.src)">
+        <img src="images/scott-maphuma.jpg" alt="Scott Maphuma" loading="lazy" onclick="openModal(this.src)">
+        <img src="images/dj.jpg" alt="DJ" loading="lazy" onclick="openModal(this.src)">
+        <img src="images/bottle-girl.jpg" alt="Bottle Girl" loading="lazy" onclick="openModal(this.src)">
+        <img src="images/swiss.jpg" alt="Swiss" loading="lazy" onclick="openModal(this.src)">
+        <img src="images/crowd.jpg" alt="Crowd" loading="lazy" onclick="openModal(this.src)">
+      </div>
+    </section>
+
+    <section class="mini-gallery">
+      <h4>Wedding Moments</h4>
+      <div class="gallery-grid">
+        <img src="images/weding-bg.jpg" alt="Wedding moment" loading="lazy" onclick="openModal(this.src)">
+        <img src="images/welcome.jpg" alt="Welcome moment" loading="lazy" onclick="openModal(this.src)">
+        <img src="images/bridesmate.jpg" alt="Bridesmaid moment" loading="lazy" onclick="openModal(this.src)">
+      </div>
+    </section>
+
+    <!-- IMAGE MODAL (Lightbox) -->
+    <div class="image-modal" id="imageModal">
+      <span class="close-btn" onclick="closeModal()">&times;</span>
+      <img id="modalImage" src="" alt="Zoomed Image">
+    </div>
+
+    <!-- IMAGE MODAL SCRIPT -->
+    <script>
+      function openModal(src) {
+        document.getElementById('modalImage').src = src;
+        document.getElementById('imageModal').style.display = 'flex';
+      }
+
+      function closeModal() {
+        document.getElementById('imageModal').style.display = 'none';
+      }
+    </script>
+
+    <!-- FOOTER -->
+    <footer>
+      <hr>
+      <h4>Inspired by what you see? <a class="bottom-contact" href="booking.html">BOOK YOUR SHOOT</a></h4>
+    </footer>
+  </body>
+</html>

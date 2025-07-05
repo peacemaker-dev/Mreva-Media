@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Photography - Mreva Media</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="nav-panel">
+      <img src="images/white-logo.png" alt="Mreva Media Logo" width="90"/>
+      <a class="nav-links" href="index.html">Home</a>
+      <a class="nav-links" href="about.html">About</a>
+      <a class="nav-links" href="services.html">Services</a>
+      <a class="nav-links" href="gallery.html">Gallery</a>
+      <a class="nav-links" href="contact.html">Contact</a>
+      <a class="nav-links" href="faq.html">FAQs</a>
+    </div>
+
+    <!-- HERO SECTION -->
+    <section class="hero">
+      <h1>Photography Services</h1>
+      <p>
+        We capture timeless images for every occasion — from ceremonies like weddings, umembeso, and umemulo, 
+        to portraits and corporate shoots. Our focus is on authentic storytelling, lighting, and emotion.
+      </p>
+    </section>
+
+    <!--MINI GALLERY-->
+    <h3>A Glimpse of Our Photography</h3>
+    <section class="mini-gallery">
+      <h4>Photoshoot Moments</h4>
+      <div class="gallery-grid">
+        <img src="images/graduation.jpg" alt="Graduation moment" loading="lazy" onclick="openModal(this.src)">
+        <img src="images/photoshoot.jpg" alt="Photoshoot moment" loading="lazy" onclick="openModal(this.src)">
+        <img src="images/photoshoot2.jpg" alt="Photoshoot moment" loading="lazy" onclick="openModal(this.src)">
+      </div>
+    </section>
+
+    <section class="mini-gallery">
+      <h4>Wedding Moments</h4>
+      <div class="gallery-grid">
+        <img src="images/weding-bg.jpg" alt="Graduation moment" loading="lazy" onclick="openModal(this.src)">
+        <img src="images/welcome.jpg" alt="Photoshoot moment" loading="lazy" onclick="openModal(this.src)">
+        <img src="images/bridesmate.jpg" alt="Photoshoot moment" loading="lazy" onclick="openModal(this.src)">
+      </div>
+    </section>
+
+    <!-- IMAGE MODAL (Lightbox) -->
+    <div class="image-modal" id="imageModal">
+      <span class="close-btn" onclick="closeModal()">&times;</span>
+      <img id="modalImage" src="" alt="Zoomed Image">
+    </div>
+
+    <h3>Visit our Gallery for more breathtaking visuals.</h3>
+    <div class="container" style="margin:20px auto;">
+      <h3>Covered Occasions:</h3>
+      <ul class="service-list">
+        <li>Weddings (Traditional, White, Combined)</li>
+        <li>Umembeso, Umemulo, Umkhehlo, Umhlonyane</li>
+        <li>Studio & Outdoor Photoshoots</li>
+        <li>Corporate Shoots</li>
+      </ul>
+      <a href="booking.html" class="cta-btn">Book Photography</a>
+    </div>
+
+    <!--Action taken when an image is clicked-->
+    <!-- IMAGE MODAL SCRIPT -->
+    <script>
+      function openModal(src) {
+        document.getElementById('modalImage').src = src;
+        document.getElementById('imageModal').style.display = 'flex';
+      }
+
+      function closeModal() {
+        document.getElementById('imageModal').style.display = 'none';
+      }
+    </script>
+  </body>
+</html>
