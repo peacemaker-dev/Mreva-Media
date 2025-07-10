@@ -11,10 +11,10 @@
         <div class="nav-panel">
             <img src="images/white-logo.png" alt="Mreva Media Logo" width="90"/>
             <a class="nav-links" href="#">Home</a>
-            <a class="nav-links" href="about.html">About</a>
             <a class="nav-links" href="services.html">Services</a>
             <a class="nav-links" href="gallery.html">Gallery</a>
             <a class="nav-links" href="contact.html">Contact</a>
+            <a class="nav-links" href="about.html">About</a>
             <a class="nav-links" href="faq.html">FAQs</a>
         </div>
         <!-- HERO SECTION -->
@@ -27,18 +27,18 @@
         <!-- OUR SERVICES -->
         <h2 class="section-title">Our Core Services</h2>
         <div class="services-banner">
-        <div class="container">
-            <img class="icon" src="images/camera-icon.png" alt="Camera Icon" width="50"/>
-            <a class="service-banner-links" href="photography.html">Photography</a>
-        </div>
-        <div class="container">
-            <img class="icon" src="images/video-cam.png" alt="Video Icon" width="50"/>
-            <a class="service-banner-links" href="video.html">Videography</a>
-        </div>
-        <div class="container">
-            <img class="icon" src="images/drone-icon.png" alt="Drone Icon" width="60"/>
-            <a class="service-banner-links" href="drone.html">Drone Coverage</a>
-        </div>
+            <div class="container">
+                <img class="icon" src="images/camera-icon.png" alt="Camera Icon" width="50"/>
+                <a class="service-banner-links" href="photography.html">Photography</a>
+            </div>
+            <div class="container">
+                <img class="icon" src="images/video-cam.png" alt="Video Icon" width="50"/>
+                <a class="service-banner-links" href="video.html">Videography</a>
+            </div>
+            <div class="container">
+                <img class="icon" src="images/drone-icon.png" alt="Drone Icon" width="60"/>
+                <a class="service-banner-links" href="drone.html">Drone Coverage</a>
+            </div>
         </div>
 
         <!-- QUICK PORTFOLIO REVIEW -->
@@ -74,16 +74,35 @@
         <!-- WHY MREVA MEDIA -->
         <h2 class="section-title">Why Choose Mreva Media?</h2>
         <div class="why-us">
-            <div class="reason">📷 High-quality visuals</div>
             <div class="reason">⏱️ Fast, reliable delivery</div>
             <div class="reason">🎯 Sharp creative team</div>
             <div class="reason">💬 Clear client communication</div>
+            <div class="reason">💰 Packages for every budget</div>
         </div>
 
-        <!-- FOOTER -->
-        <footer>
+        <!-- COMMUNITY IMPACT -->
+        <h2 class="section-title">Giving Back</h2>
+        <div class="community-impact">
+            <p>
+                At <strong> Mreva Media</strong>, we believe in more than just capturing moments — we believe in creating them for others too.
+                Our team has proudly donated school shoes to local children in need as part of our mission to uplift and empower our community.
+            </p>
+            <img src="images/donation.jpg" alt="Donation Event" class="impact-img">
+        </div>
+
+        <!-- BOTTOM CTA -->
+        <section class="bottom-cta">
             <hr>
             <h4>Ready to work with us? <a class="bottom-contact" href="booking.html">BOOK NOW</a></h4>
+            <hr>
+        </section>
+
+        <!--Developed by Peacemaker Dev-->
+        <footer>
+            <p>&copy; <span id="year"></span> Peacemaker Dev. All rights reserved.</p>
         </footer>
+        <script>
+            document.getElementById("year").textContent = new Date().getFullYear();
+        </script>
     </body>
 </html>

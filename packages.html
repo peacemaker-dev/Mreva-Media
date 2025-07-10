@@ -10,10 +10,10 @@
     <div class="nav-panel">
       <img src="images/white-logo.png" alt="Mreva Media Logo" width="90" />
       <a class="nav-links" href="index.html">Home</a>
-      <a class="nav-links" href="about.html">About</a>
       <a class="nav-links" href="services.html">Services</a>
       <a class="nav-links" href="gallery.html">Gallery</a>
       <a class="nav-links" href="contact.html">Contact</a>
+      <a class="nav-links" href="about.html">About</a>
       <a class="nav-links" href="faq.html">FAQs</a>
     </div>
 
@@ -70,13 +70,22 @@
     </div>
 
 
-    <!-- FOOTER -->
-    <footer>
+    <!-- BOTTOM CTA -->
+    <section class="bottom-cta">
       <hr />
       <h4 style="text-align: center">
         Ready to book your package?
         <a class="bottom-contact" href="booking.html">BOOK NOW</a>
       </h4>
+      <hr>
+    </section>
+
+    <!--Developed by Peacemaker Dev-->
+    <footer>
+        <p>&copy; <span id="year"></span> Peacemaker Dev. All rights reserved.</p>
     </footer>
+    <script>
+        document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
   </body>
 </html>

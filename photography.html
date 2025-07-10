@@ -9,10 +9,10 @@
     <div class="nav-panel">
       <img src="images/white-logo.png" alt="Mreva Media Logo" width="90"/>
       <a class="nav-links" href="index.html">Home</a>
-      <a class="nav-links" href="about.html">About</a>
       <a class="nav-links" href="services.html">Services</a>
       <a class="nav-links" href="gallery.html">Gallery</a>
       <a class="nav-links" href="contact.html">Contact</a>
+      <a class="nav-links" href="about.html">About</a>
       <a class="nav-links" href="faq.html">FAQs</a>
     </div>
 
@@ -30,8 +30,8 @@
     <section class="mini-gallery">
       <h4>Photoshoot Moments</h4>
       <div class="gallery-grid">
-        <img src="images/graduation.jpg" alt="Graduation moment" loading="lazy" onclick="openModal(this.src)">
-        <img src="images/photoshoot.jpg" alt="Photoshoot moment" loading="lazy" onclick="openModal(this.src)">
+        <img src="images/photoshoot3.jpg" alt="Photoshoot moment" loading="lazy" onclick="openModal(this.src)">
+        <img src="images/photoshoot1.jpg" alt="Photoshoot moment" loading="lazy" onclick="openModal(this.src)">
         <img src="images/photoshoot2.jpg" alt="Photoshoot moment" loading="lazy" onclick="openModal(this.src)">
       </div>
     </section>
@@ -39,9 +39,9 @@
     <section class="mini-gallery">
       <h4>Wedding Moments</h4>
       <div class="gallery-grid">
-        <img src="images/weding-bg.jpg" alt="Graduation moment" loading="lazy" onclick="openModal(this.src)">
+        <img src="images/weding1.jpg" alt="Graduation moment" loading="lazy" onclick="openModal(this.src)">
         <img src="images/welcome.jpg" alt="Photoshoot moment" loading="lazy" onclick="openModal(this.src)">
-        <img src="images/bridesmate.jpg" alt="Photoshoot moment" loading="lazy" onclick="openModal(this.src)">
+        <img src="images/wedding6.jpg" alt="Photoshoot moment" loading="lazy" onclick="openModal(this.src)">
       </div>
     </section>
 
@@ -51,7 +51,7 @@
       <img id="modalImage" src="" alt="Zoomed Image">
     </div>
 
-    <h3>Visit our Gallery for more breathtaking visuals.</h3>
+    <h3>Visit our <a class="gallery-link" href="gallery.html">Gallery</a> for more breathtaking visuals.</h3>
     <div class="container" style="margin:20px auto;">
       <h3>Covered Occasions:</h3>
       <ul class="service-list">
@@ -63,6 +63,14 @@
       <a href="booking.html" class="cta-btn">Book Photography</a>
     </div>
 
+    <!--Developed by Peacemaker Dev-->
+    <footer>
+        <p>&copy; <span id="year"></span> Peacemaker Dev. All rights reserved.</p>
+    </footer>
+    <script>
+        document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+    
     <!--Action taken when an image is clicked-->
     <!-- IMAGE MODAL SCRIPT -->
     <script>

@@ -10,14 +10,14 @@
     <div class="nav-panel">
         <img src="images/white-logo.png" alt="Mreva Media Logo" width="90"/>
         <a class="nav-links" href="index.html">Home</a>
-        <a class="nav-links" href="about.html">About</a>
         <a class="nav-links" href="services.html">Services</a>
         <a class="nav-links" href="gallery.html">Gallery</a>
         <a class="nav-links" href="#">Contact</a>
+        <a class="nav-links" href="about.html">About</a>
         <a class="nav-links" href="faq.html">FAQs</a>
     </div>
 
-    <h1>Contact Us</h1>
+    <h1>Contact <span style="color:#f9a825;">Us</span></h1>
 
     <div class="contact-wrapper">
         <!-- Contact Details Block -->
@@ -53,5 +53,13 @@
             </form>
         </div>
     </div>
+
+    <!--Developed by Peacemaker Dev-->
+        <footer>
+            <p>&copy; <span id="year"></span> Peacemaker Dev. All rights reserved.</p>
+        </footer>
+        <script>
+            document.getElementById("year").textContent = new Date().getFullYear();
+        </script>
     </body>
 </html>

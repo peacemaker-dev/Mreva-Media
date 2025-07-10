@@ -108,6 +108,29 @@ h3, h4, h5{
     font-weight: bold;
 }
 
+.community-impact {
+    width: 80%;
+    margin: 20px auto;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.05);
+    padding: 20px;
+    border-radius: 10px;
+    border-left: 5px solid gold;
+}
+
+.community-impact p {
+    font-size: 16px;
+    margin-bottom: 15px;
+    color: #ccc;
+}
+
+.impact-img {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(255,255,255,0.1);
+}
+
 /***************** Service & Portfolio Containers *****************/
 .container {
     border: 1px solid rgba(255, 255, 255, 0.1);
@@ -163,7 +186,7 @@ h3, h4, h5{
     border-radius: 8px;
 }
 
-/***************** Footer *****************/
+/************************* BOTTOM CTA **************************/
 .bottom-contact {
     text-decoration: none;
     color: #caa603;
@@ -179,7 +202,7 @@ h3, h4, h5{
 }
 
 
-/*************BOOKING PAGE**************/
+/******************************BOOKING PAGE***********************/
 input, textarea{
     background-color:#b6b2b2;
     display:inline-block;
@@ -204,7 +227,7 @@ input, textarea{
     background-color:rgb(192, 165, 9);
 }
 
-/********************CONTACT PAGE**************/
+/*****************************CONTACT PAGE****************************/
 .contact-wrapper {
     display: flex;
     flex-wrap: wrap;
@@ -245,7 +268,7 @@ input, textarea{
     margin-bottom:5px;
 }
 
-/********************ABOUT PAGE******************/
+/****************************ABOUT PAGE*************************/
 .about-team{
     text-align:center;
 }
@@ -253,6 +276,7 @@ input, textarea{
 .about-team p{
     margin:20px;
     margin-top:0;
+    font-size:medium;
 }
 
 .about-team p:first-of-type{
@@ -275,6 +299,51 @@ input, textarea{
     width:30%;
     display:block;
     max-width:100%;
+}
+
+.team-section {
+    width: 90%;
+    margin: 40px auto;
+    text-align: center;
+    color: #fff;
+}
+
+.team-member {
+    margin-bottom: 30px;
+}
+
+.team-photo {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 10px;
+    border: 3px solid #caa603;
+}
+
+.team-role {
+    font-style: italic;
+    color: #caa603;
+    margin-bottom: 5px;
+}
+
+.team-bio {
+    width: 60%;
+    margin: 0 auto;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.team-grid {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.team-grid .team-member {
+    flex: 1 1 200px;
+    max-width: 220px;
 }
 
 /********************SERVICES PAGE******************/
@@ -406,7 +475,7 @@ input, textarea{
   margin-top: 10px;
 }
 
-/********************PHOTOGRAPHY, VIDEOGRAPHY AND DRONE PAGES******************/
+/********************PHOTOGRAPHY, VIDEOGRAPHY, DRONE & GALLERY PAGES******************/
 .mini-gallery{
     text-align:center;
     margin:40px auto;
@@ -425,13 +494,20 @@ input, textarea{
     width:100%;
     height:auto;
     border-radius:10px;
-    transition: transform 0.3s;
     cursor:pointer;
     transition: transform 0.3s;
 }
 
 .gallery-grid img:hover{
     transform: scale(1.05);
+}
+
+.gallery-link{
+    color:#caa603;
+}
+
+.gallery-link:hover{
+    color:#ffcc00;
 }
 
 .lightbox{
@@ -482,4 +558,24 @@ input, textarea{
     font-size: 30px;
     color: white;
     cursor: pointer;
+}
+
+/* Separate styles for portrait images */
+.portrait-gallery img {
+    aspect-ratio: 3 / 4;
+    object-fit: cover;
+}
+
+/* Separate styles for landscape images */
+.landscape-gallery img {
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
+}
+
+
+/*************************FOOTER*************************/
+footer{
+    text-align:center;
+    font-size:0.9em;
+    color:#777;
 }

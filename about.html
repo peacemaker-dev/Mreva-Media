@@ -10,13 +10,13 @@
         <div class="nav-panel">
             <img src="images/white-logo.png" alt="Mreva Media Logo" width="90"/>
             <a class="nav-links" href="index.html">Home</a>
-            <a class="nav-links" href="#">About</a>
             <a class="nav-links" href="services.html">Services</a>
             <a class="nav-links" href="gallery.html">Gallery</a>
             <a class="nav-links" href="contact.html">Contact</a>
+            <a class="nav-links" href="#">About</a>
             <a class="nav-links" href="faq.html">FAQs</a>
         </div>
-        <h1>About </h1>
+        <h1>About <span style="color:#f9a825;">Us</span></h1>
         <div class="logo-box"><img class="logo-image" src="images/gold-logo.png" alt="Mreva Media Logo"/></div>
         
         <div class="about-team">
@@ -39,20 +39,73 @@
             <p>We're obsessed with good lighting, natural emotion, and clean edits. 
                 Our goal isn't just to make your photos look good, it's to make them feel real. 
                 Every frame is crafted with precision, using top-tier equipment and a creative eye that sees more than just the surface.</p>
-            <h4>Why Choose Mreva Media?</h4>
-            <p>Professional team with sharp creative instincts
-                Reliable, fast turnaround times. Cutting-edge drone tech for breathtaking aerial views.
-                Packages for every budget
-                Customized experience for each client
-                Passionate about what we do and it shows.</p>
+                        <h4>Why Choose Mreva Media?</h4>
+            <p>
+                Professional team with sharp creative instincts.<br>
+                Reliable, fast turnaround times.<br>
+                Cutting-edge drone tech for breathtaking aerial views.<br>
+                Packages for every budget.<br>
+                Customized experience for each client.<br>
+                Passionate about what we do — and it shows.
+            </p>
+
+            <h4>Giving Back</h4>
+            <p>
+                Mreva Media believes in building more than memories. We proudly support our local community through initiatives like 
+                school shoe donations to under-resourced schools — because empowering the next generation matters just as much as capturing the present one.
+            </p>
+
             <h4>Let's Work Together</h4>
-            <p>We're more than just a camera crew, we're memory-makers. Whether you're walking down the aisle, launching a brand, 
-                or throwing the event of the year, we'll be there to catch the best angles of your story.</p>
+            <p>
+                We're more than just a camera crew — we're memory-makers. Whether you're walking down the aisle, launching a brand, 
+                or throwing the event of the year, we'll be there to catch the best angles of your story.
+            </p>
         </div>
-        <!--FOOTER-->
-        <footer>
+
+        <!-- TEAM SECTION -->
+        <div class="team-section">
+            <!-- Director Section -->
+            <div class="team-member director">
+                <img src="images/director.jpg" alt="Director Photo" class="team-photo">
+                <h3>Simiso "Mreva" Mngomezulu</h3>
+                <p class="team-role">Founder & Director</p>
+                <p class="team-bio">
+                    A visionary behind the lens, Simiso leads Mreva Media with passion, precision, and purpose.
+                    With years of hands-on experience in photography and videography, he ensures every moment captured is one worth remembering.
+                </p>
+            </div>
+
+            <h2>Our Creative Team</h2>
+            <p class="team-intro">Behind every great moment we capture is a crew of passionate creatives who bring skill, energy, and vision to each shoot.</p>
+
+            <div class="team-grid">
+                <div class="team-member">
+                    <img src="images/khanyisani.jpg" alt="Khanyisani Mngomezulu" class="team-photo">
+                    <h4>Khanyisani Mngomezulu</h4>
+                </div>
+                <div class="team-member">
+                    <img src="images/mlamuli.jpg" alt="Mlamuli Biyela" class="team-photo">
+                    <h4>Mlamuli Biyela</h4>
+                </div>
+                <!-- Add more team members here later -->
+            </div>
+        </div>
+    </div>
+
+        <!-- BOTTOM CTA -->
+        <section class="bottom-cta">
             <hr>
-                <h4>Ready to work with us? Book now! <a class="bottom-contact" href="booking.html">BOOK NOW</a></h4>
+                <h4>Ready to work with us?
+                <a class="bottom-contact" href="booking.html">BOOK NOW</a></h4>
+            <hr>
+        </section>
+
+        <!--Developed by Peacemaker Dev-->
+        <footer>
+            <p>&copy; <span id="year"></span> Peacemaker Dev. All rights reserved.</p>
         </footer>
+        <script>
+            document.getElementById("year").textContent = new Date().getFullYear();
+        </script>
     </body>
 </html>

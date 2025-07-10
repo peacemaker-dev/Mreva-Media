@@ -10,13 +10,13 @@
         <div class="nav-panel">
             <img src="images/white-logo.png" alt="Mreva Media Logo" width="90"/>
             <a class="nav-links" href="index.html">Home</a>
-            <a class="nav-links" href="about.html">About</a>
             <a class="nav-links" href="services.html">Services</a>
             <a class="nav-links" href="gallery.html">Gallery</a>
             <a class="nav-links" href="contact.html">Contact</a>
+            <a class="nav-links" href="about.html">About</a>
             <a class="nav-links" href="faq.html">FAQs</a>
         </div>
-        <h1>BOOK HERE</h1>
+        <h1>BOOK <span style="color:#f9a825;">HERE</span></h1>
         <h4>Please fill in the details below.</h4>
         <form id="booking-form">
             <label for="name">Name:</label>
@@ -38,5 +38,13 @@
             <button type="button" id="submit">Submit</button>
         </form>
         <h4><strong>NOTE:</strong> WhatsApp or Call us directly - 079 048 1198</h4>
+
+        <!--Developed by Peacemaker Dev-->
+        <footer>
+            <p>&copy; <span id="year"></span> Peacemaker Dev. All rights reserved.</p>
+        </footer>
+        <script>
+            document.getElementById("year").textContent = new Date().getFullYear();
+        </script>
     </body>
 </html>
