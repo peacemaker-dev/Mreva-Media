@@ -25,6 +25,7 @@ h3, h4, h5{
 
 .nav-links{
     text-decoration:none;
+    text-align:center;
     width:100%;
     margin:auto;
     color:#fff;
@@ -33,6 +34,7 @@ h3, h4, h5{
 
 .nav-links:hover{
     color:#8A2BE2;
+    border-radius:10px;
     text-shadow:0 0 8px rgba(138, 43, 226, 0.7);
 }
 
@@ -142,6 +144,7 @@ h3, h4, h5{
     border-radius: 15px;
     box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.4);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor:pointer;
 }
 
 .container:hover {
@@ -162,7 +165,6 @@ h3, h4, h5{
     gap: 20px;
 }
 
-.service-banner-links,
 .portfolio-links {
     text-decoration: none;
     text-align: center;
@@ -170,7 +172,6 @@ h3, h4, h5{
     color: #fff;
 }
 
-.service-banner-links:hover,
 .portfolio-links:hover {
     color: #000;
     text-shadow: 0 0 8px rgba(138, 43, 226, 0.7);
