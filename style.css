@@ -8,6 +8,11 @@ body{
     color:#fff;
 }
 
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
 h1{
     text-align:center;
     margin: 10px 0 5px 0 ;
