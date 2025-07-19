@@ -716,6 +716,28 @@ input, textarea{
   color: #000;
 }
 
+@media (max-width: 768px) {
+  .nav-panel {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap !important;
+    overflow-x: auto; /* allows scroll if needed */
+  }
+
+  .nav-links {
+    white-space: nowrap;
+    padding: 10px 12px;
+    font-size: 14px;
+  }
+
+  .nav-panel img {
+    width: 70px;
+    margin-right: 10px;
+  }
+}
+
 /*************************FOOTER*************************/
 footer{
     text-align:center;
