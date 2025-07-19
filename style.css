@@ -716,25 +716,65 @@ input, textarea{
   color: #000;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 600px) {
+  body {
+    padding: 0 10px;
+    font-size: 15px;
+  }
+
   .nav-panel {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: nowrap !important;
-    overflow-x: auto; /* allows scroll if needed */
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    justify-content: flex-start;
+    gap: 10px;
   }
 
   .nav-links {
+    padding: 8px 10px;
+    font-size: 13px;
     white-space: nowrap;
-    padding: 10px 12px;
+  }
+
+  .hero h1 {
+    font-size: 22px;
+  }
+
+  .hero p {
+    font-size: 15px;
+  }
+
+  .highlight-heading {
+    font-size: 20px;
+  }
+
+  .highlight-subtext {
     font-size: 14px;
   }
 
-  .nav-panel img {
-    width: 70px;
-    margin-right: 10px;
+  .video-card,
+  .container,
+  .service-list li {
+    font-size: 14px;
+  }
+
+  .cta-btn {
+    font-size: 14px;
+    padding: 8px 14px;
+  }
+
+  footer p {
+    font-size: 13px;
+  }
+
+  /* Prevent images from shrinking too much */
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  video {
+    max-width: 100%;
+    height: auto;
   }
 }
 
