@@ -8,7 +8,7 @@
     <body>
         <!--TOP PANEL-->
         <div class="nav-panel">
-            <img src="images/white-logo.png" alt="Mreva Media Logo" width="90"/>
+            <img src="images/white-logo.png" alt="Mreva  Media Logo" width="90"/>
             <a class="nav-links" href="index.html">Home</a>
             <a class="nav-links" href="services.html">Services</a>
             <a class="nav-links" href="gallery.html">Gallery</a>
@@ -16,12 +16,13 @@
             <a class="nav-links" href="about.html">About</a>
             <a class="nav-links" href="faq.html">FAQs</a>
         </div>
+
         <h1>BOOK <span style="color:#f9a825;">HERE</span></h1>
         <h4>Please <span style="color:red;">fill</span> in the details below.</h4>
-        <form id="booking-form" action="https://formsubmit.co/mlamulipeacebiyela@gmail.com" method="POST">
+        <form id="booking-form" action="https://formsubmit.co/mrevasimiso17@gmail.com" method="POST">
             <label for="name">Name:</label>
             <input type="text" name="name" id="name" required>*<br/>
-            <label for="number">Contact no: </label>
+            <label for="number">Contact: </label>
             <input type="tel" name="number" required>*<br>
             <label for="email">Email:</label>
             <input type="email" name="email" id="email" ><br/>
@@ -37,16 +38,65 @@
             <input type="text" name="services" id="services"><br/>
             <label for="message">Message: </label><br/>
             <textarea name="message" id="message" rows="3" cols="30"></textArea><br/>
+            <input type="checkbox" name="terms" id="terms-checkbox" required>
+            <label for="terms-checkbox" class="checkbox-label">I have read and agree to the Terms and Conditions listed below.</label><br/>
             <button type="submit" id="submit">Submit</button>
         </form>
         <h4><strong>NOTE:</strong> WhatsApp or Call us directly - 079 048 1198</h4>
+
+        <!--Terms and conditions-->
+        <div class="terms-box">
+            <h4>Mreva Media PTY LTD - Terms & Conditions</h4>
+            <ol>
+                <li><strong>Deposit Requirement:</strong> A deposit of <strong>50%</strong> is required to secure and confirm your booking. This guarantees your event date is reserved exclusively for you.</li>
+                <li><strong>Deposit Deadline:</strong> The deposit must be paid <strong>upon booking confirmation</strong>. If not received, the date will remain open and may be assigned to another client.</li>
+                <li><strong>Balance Payment:</strong> The remaining <strong>50%</strong> must be paid <strong>on or before the event day</strong>, prior to the start of the shoot or coverage.</li>
+                <li><strong>Transport Fee:</strong> Packages <strong>do not include transport costs</strong>. Clients are responsible for transport fees, which are calculated based on distance and will be quoted separately.</li>
+                <li><strong>Working Hours:</strong> Standard working hours are from <strong>08:00 AM to 17:00 PM</strong>. Any work required <strong>outside these hours</strong> may incur an <strong>additional hourly fee</strong> depending on the package and nature of the event.</li>
+                <li><strong>Extra Time & Overtime:</strong> If your event exceeds the agreed hours, <strong>additional charges apply</strong>. These rates vary by service and will be communicated upon booking confirmation.</li>
+                <li><strong>Combined Events (Same Day):</strong> We accommodate <strong>combined ceremonies held on the same day</strong> ,  including:
+                <ul>
+                    <li>White wedding + Traditional (Umabo)</li>
+                    <li>Umemulo + Umkhehlo</li>
+                    <li>Umembeso + Wedding Reception</li>
+                    <li>Any two or more ceremonies or functions combined</li>
+                </ul>
+                A custom package will be created to ensure proper coverage and fair pricing.
+                </li>
+                <li><strong>Event Types Covered:</strong> Our packages apply to all traditional and modern celebrations, including but not limited to:
+                <ul>
+                    <li>White Weddings</li>
+                    <li>Traditional Ceremonies</li>
+                    <li>Umembeso</li>
+                    <li>Umemulo</li>
+                    <li>Umkhehlo</li>
+                    <li>Umhlonyane</li>
+                    <li>Graduations</li>
+                    <li>Photoshoots</li>
+                    <li>Private Events</li>
+                </ul>
+                </li>
+                <li><strong>Booking Confirmation:</strong> Submission of the booking form is not confirmation. The booking is only confirmed once deposit payment is received and official confirmation is sent by Mreva Media.</li>
+                <li><strong>Rescheduling Policy:</strong> Event rescheduling must be requested at least <strong>72 hours in advance</strong>. New dates are subject to availability. Any additional transport or accommodation costs must be covered by the client.</li>
+                <li><strong>Usage Rights:</strong> Mreva Media retains the right to use selected images and videos for promotional purposes, including but not limited to social media, website, and advertising. Clients who prefer their content to remain private must inform us in writing <strong>before the event date</strong> and negotiations will be made.</li>
+                <li><strong>Multi-Day Bookings & Accommodation:</strong> If the event spans more than one day, the client must provide secure and appropriate accommodation for the Mreva Media team. If accommodation is provided at the client's home or residence, it must be a private and lockable room. 
+                    <strong>Mreva Media will not be held liable</strong> for any loss or damage of equipment or personal belongings during the stay. The client accepts full responsibility should any loss or incident occur in such cases.
+                </li>
+            </ol>
+        </div>
 
         <!--Developed by Peacemaker Dev-->
         <footer>
             <p>&copy; <span id="year"></span> Peacemaker Dev. All rights reserved.</p>
         </footer>
         <script>
+            // Set copyright year
             document.getElementById("year").textContent = new Date().getFullYear();
+
+            // Prevent past date selection
+            const dateInput = document.getElementById("date");
+            const today = new Date().toISOString().split("T")[0]; // Get today's date in yyyy-mm-dd format
+            dateInput.min = today;
         </script>
     </body>
 </html>

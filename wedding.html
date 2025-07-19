@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Weddings - Mreva Media</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="nav-panel">
+      <img src="images/white-logo.png" alt="Mreva Media Logo" width="90"/>
+      <a class="nav-links" href="index.html">Home</a>
+      <a class="nav-links" href="services.html">Services</a>
+      <a class="nav-links" href="gallery.html">Gallery</a>
+      <a class="nav-links" href="contact.html">Contact</a>
+      <a class="nav-links" href="about.html">About</a>
+      <a class="nav-links" href="faq.html">FAQs</a>
+    </div>
+
+    <!-- HERO -->
+    <section class="hero">
+      <h1><span style="color:#f9a825;">Wedding</span> Coverage</h1>
+      <p>We capture love stories with elegance, whether it's a white wedding, traditional ceremony, or a combined celebration. Your day, your story, our lens.</p>
+    </section>
+
+    <!-- MINI GALLERY -->
+    <h3>A Glimpse of Our Wedding Work</h3>
+    <section class="mini-gallery">
+      <div class="gallery-grid">
+        <img src="images/wedding (6).jpg" alt="Wedding Moment" onclick="openModal(this.src)">
+        <img src="images/wedding (11).jpg" alt="Wedding Moment" onclick="openModal(this.src)">
+        <img src="images/wedding (18).jpg" alt="Wedding Moment" onclick="openModal(this.src)">
+      </div>
+    </section>
+
+    <h3>Explore more unforgettable moments in our <a class="gallery-link" href="gallery.html"> Gallery</a>.</h3>
+    <!-- BOOKING -->
+    <div class="container" style="margin:20px auto;">
+      <h3>We cover:</h3>
+      <ul class="service-list">
+        <li>White Weddings</li>
+        <li>Traditional Weddings (Umabo)</li>
+        <li>Combined Ceremonies</li>
+      </ul>
+      <a href="booking.html" class="cta-btn">Book Wedding Coverage</a>
+    </div>
+
+    <!-- MODAL -->
+    <div class="image-modal" id="imageModal">
+      <span class="close-btn" onclick="closeModal()">&times;</span>
+      <img id="modalImage" src="" alt="Zoomed Image">
+    </div>
+
+    <footer>
+      <p>&copy; <span id="year"></span> Peacemaker Dev. All rights reserved.</p>
+    </footer>
+
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+      function openModal(src) {
+        document.getElementById('modalImage').src = src;
+        document.getElementById('imageModal').style.display = 'flex';
+      }
+      function closeModal() {
+        document.getElementById('imageModal').style.display = 'none';
+      }
+    </script>
+  </body>
+</html>
