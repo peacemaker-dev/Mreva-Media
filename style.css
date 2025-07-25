@@ -335,7 +335,34 @@ input, textarea{
     margin:2px auto;
     margin-bottom:5px;
 }
+.business-info {
+    background-color: rgba(255,255,255,0.05);
+    border-left: 4px solid #caa603;
+    border-radius: 8px;
+    padding: 18px 24px;
+    margin: 25px auto;
+    max-width: 400px;
+    color: #fff;
+    text-align: left;
+    box-shadow: 0 0 8px rgba(255,255,255,0.08);
+}
 
+.business-info h4 {
+    color: #caa603;
+    margin-bottom: 12px;
+    font-size: 20px;
+    text-align: center;
+    letter-spacing: 1px;
+}
+
+.business-info p {
+    margin: 8px 0;
+    font-size: 15px;
+}
+
+.business-info strong {
+    color: gold;
+}
 /****************************ABOUT PAGE*************************/
 .about-team{
     text-align:center;
@@ -367,6 +394,31 @@ input, textarea{
     width:30%;
     display:block;
     max-width:100%;
+}
+
+.equipment-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.equipment-photo {
+    width: 160px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 18px;
+    border: 3px solid #8A2BE2;
+    box-shadow: 0 4px 18px rgba(138, 43, 226, 0.18), 0 1.5px 8px rgba(255,255,255,0.10);
+    background: #18122b;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.equipment-photo:hover {
+    transform: scale(1.06) rotate(-2deg);
+    box-shadow: 0 8px 32px rgba(202, 166, 3, 0.18), 0 2px 12px rgba(255,255,255,0.18);
+    border-color: gold;
 }
 
 .team-section {
