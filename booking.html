@@ -17,8 +17,11 @@
         <meta property="og:url" content="https://mrevamedia.co.za/">
         <meta property="og:type" content="website">
 
-        <!-- Favicon (Optional but Professional) -->
-        <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+        <!-- Favicon -->
+        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+        <link rel="manifest" href="/site.webmanifest">
 
         <!-- Stylesheet -->
         <link rel="stylesheet" href="style.css">
@@ -39,24 +42,53 @@
         <h1>BOOK <span style="color:#f9a825;">HERE</span></h1>
         <h4>Please <span style="color:red;">fill</span> in the details below.</h4>
         <form id="booking-form" action="https://formsubmit.co/mrevasimiso17@gmail.com" method="POST">
+            <!-- Hidden Inputs -->
+            <input type="hidden" name="_captcha" value="false">
+            <input type="hidden" name="_next" value="https://www.mrevamedia.co.za/thank-you.html">
+    
             <label for="name">Name:</label>
-            <input type="text" name="name" id="name" required>*<br/>
-            <label for="number">Contact: </label>
-            <input type="tel" name="number" required>*<br>
+            <input type="text" id="name" name="name" required minlength="2" pattern="[A-Za-z\s]+" />*<br/>
+            <label for="number">Contact:</label>
+            <input type="tel" name="number" id="number" required 
+                pattern="^0[6-8][0-9]{8}$" 
+                placeholder="e.g. 0712345678"
+                title="Enter a valid South African number e.g. 0712345678"/>*</br>
             <label for="email">Email:</label>
             <input type="email" name="email" id="email" ><br/>
-            <label for="eventType">Event Type:</label>
-            <input type="text" name="event-type" id="event-type" required>*<br/>
             <label for="date">Date: </label>
             <input type="date" name="date" id="date" required>*<br/>
             <label for="time">Time: </label>
             <input type="time" name="time" id="time"><br/>
             <label for="location">Location: </label>
             <input type="text" name="location" id="location" required>*<br/>
+
+            <!-- Service selection dropdown -->
             <label for="services">Service Needed:</label>
-            <input type="text" name="services" id="services"><br/>
-            <label for="message">Message: </label><br/>
-            <textarea name="message" id="message" rows="3" cols="30"></textArea><br/>
+            <select name="service" required>
+                <option value="">----- Select a Service -----</option>
+                <option value="white wedding">White Wedding Only</option>
+                <option value="traditional wedding">Traditional Wedding Only</option>
+                <option value="combined wedding">White & Tradditional Wedding</option>
+                <option value="umemulo">Umemulo</option>
+                <option value="umembeso">Umembeso</option>
+                <option value="umhlonyane">Umhlonyane</option>
+                <option value="graduation">Graduation</option>
+                <option value="photography">Photography Only</option>
+                <option value="videography">Videography Only</option>
+                <option value="drone">Drone Coverage Only</option>
+            </select>*<br/>
+
+            <!-- Package selection dropdown -->
+            <label for="package">Package:</label>
+            <select name="package" id="package" required>
+                <option value="">-- Select a Package --</option>
+                <option value="basic">Basic</option>
+                <option value="standard">Standard</option>
+                <option value="premium">Premium</option>
+            </select><br/>
+
+            <label for="message">Message:</label><br/>
+            <textarea name="message" id="message" rows="3" cols="40" placeholder="E.g. We want both Umemulo and Graduation on the same day, or any other details you want to add..."></textarea><br/>
             <input type="checkbox" name="terms" id="terms-checkbox" required>
             <label for="terms-checkbox" class="checkbox-label">I have read and agree to the Terms and Conditions listed below.</label><br/>
             <button type="submit" id="submit">Submit</button>
@@ -110,13 +142,15 @@
             <p>Powered by Peacemaker Dev</p>
         </footer>
         <script>
-            // Set copyright year
-            document.getElementById("year").textContent = new Date().getFullYear();
+    // Set copyright year
+    document.getElementById("year").textContent = new Date().getFullYear();
 
-            // Prevent past date selection
-            const dateInput = document.getElementById("date");
-            const today = new Date().toISOString().split("T")[0]; // Get today's date in yyyy-mm-dd format
-            dateInput.min = today;
-        </script>
+    // Prevent past date selection
+    const dateInput = document.getElementById("date");
+    const today = new Date().toISOString().split("T")[0];
+    dateInput.min = today;
+
+</script>
+
     </body>
 </html>

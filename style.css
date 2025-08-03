@@ -209,7 +209,7 @@ h3, h4, h5{
 
 
 /******************************BOOKING PAGE***********************/
-input, textarea{
+input, textarea, select{
     background-color:#b6b2b2;
     display:inline-block;
     margin:5px;
@@ -822,10 +822,6 @@ input, textarea{
     padding: 8px 14px;
   }
 
-  footer p {
-    font-size: 13px;
-  }
-
   /* Prevent images from shrinking too much */
   img {
     max-width: 100%;
@@ -843,4 +839,8 @@ footer{
     text-align:center;
     font-size:0.9em;
     color:#777;
+}
+
+footer p {
+    font-size: 13px;
 }
