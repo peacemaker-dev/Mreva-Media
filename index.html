@@ -18,10 +18,20 @@
         <meta property="og:type" content="website">
 
         <!-- Favicon -->
-        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-        <link rel="manifest" href="/site.webmanifest">
+        <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
+        <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+        <link rel="shortcut icon" href="/favicon.ico" />
+        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+        <meta name="apple-mobile-web-app-title" content="Mreva Media" />
+        <link rel="manifest" href="/site.webmanifest" />
+
+        <!-- PWA Meta -->
+        <link rel="manifest" href="manifest.json">
+        <meta name="theme-color" content="#000000">
+        <meta name="mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+        <link rel="apple-touch-icon" href="/web-app-manifest-192x192.png">
 
         <!-- Stylesheet -->
         <link rel="stylesheet" href="style.css">
@@ -47,38 +57,38 @@
         </section>
 
         <!-- OUR SERVICES -->
-<h2 class="section-title">Our Core Services</h2>
-<div class="card-grid">
-    <div class="card" onclick="window.location.href='photography.html'">
-        <img class="icon" src="images/camera-icon.png" alt="Camera Icon" width="50"/>
-        <p>Photography</p>
-    </div>
-    <div class="card" onclick="window.location.href='video.html'">
-        <img class="icon" src="images/video-cam.png" alt="Video Icon" width="50"/>
-        <p>Videography</p>
-    </div>
-    <div class="card" onclick="window.location.href='drone.html'">
-        <img class="icon" src="images/drone-icon.png" alt="Drone Icon" width="60"/>
-        <p>Drone<br/>Coverage</p>
-    </div>
-</div>
+        <h2 class="section-title">Our Core Services</h2>
+        <div class="card-grid">
+            <div class="card" onclick="window.location.href='photography.html'">
+                <img class="icon" src="images/camera-icon.png" alt="Camera Icon" width="50"/>
+                <p>Photography</p>
+            </div>
+            <div class="card" onclick="window.location.href='video.html'">
+                <img class="icon" src="images/video-cam.png" alt="Video Icon" width="50"/>
+                <p>Videography</p>
+            </div>
+            <div class="card" onclick="window.location.href='drone.html'">
+                <img class="icon" src="images/drone-icon.png" alt="Drone Icon" width="60"/>
+                <p>Drone<br/>Coverage</p>
+            </div>
+        </div>
 
-<!-- PORTFOLIO HIGHLIGHTS -->
-<h2 class="section-title">Portfolio Highlights</h2>
-<div class="card-grid">
-    <div class="card" onclick="window.location.href='wedding.html'">
-        <h4>Wedding</h4>
-        <p>Elegant captures of your most unforgettable day.</p>
-    </div>
-    <div class="card" onclick="window.location.href='tradditional.html'">
-        <h4>Traditional</h4>
-        <p>Cultural elegance captured with depth and respect.</p>
-    </div>
-    <div class="card" onclick="window.location.href='graduation.html'">
-        <h4>Graduation</h4>
-        <p>Celebrating academic milestones with class and energy.</p>
-    </div>
-</div>
+        <!-- PORTFOLIO HIGHLIGHTS -->
+        <h2 class="section-title">Portfolio Highlights</h2>
+        <div class="card-grid">
+            <div class="card" onclick="window.location.href='wedding.html'">
+                <h4>Wedding</h4>
+                <p>Elegant captures of your most unforgettable day.</p>
+            </div>
+            <div class="card" onclick="window.location.href='tradditional.html'">
+                <h4>Traditional</h4>
+                <p>Cultural elegance captured with depth and respect.</p>
+            </div>
+            <div class="card" onclick="window.location.href='graduation.html'">
+                <h4>Graduation</h4>
+                <p>Celebrating academic milestones with class and energy.</p>
+            </div>
+        </div>
 
 
         <!-- TESTIMONIALS -->
@@ -129,6 +139,13 @@
         </footer>
         <script>
             document.getElementById("year").textContent = new Date().getFullYear();
+
+            // Service Worker Registration for PWA
+            if ('serviceWorker' in navigator) {
+                navigator.serviceWorker.register('service-worker.js')
+                .then(reg => console.log('✅ Service Worker Registered'))
+                .catch(err => console.error('❌ Service Worker Failed', err));
+            }
         </script>
     </body>
 </html>
