@@ -64,7 +64,7 @@
                 <div class="hero-content">
                     <span class="company-name">MREVA MEDIA</span>
                     <h2>Capturing moments that matter.<br/>Cinematic visuals, timeless memories.</h2>
-                    <p>Cinematic visuals and timeless memories, crafted to perfection for weddings, graduations, and cultural events.</p>
+                    <p>Turn your special day into lasting memories with cinematic photography and videography for weddings, graduations, and cultural celebrations.</p>
                     <div class="cta-buttons">
                         <a class="cta-btn primary" href="booking.html">Book Now</a>
                         <a class="cta-btn secondary" href="gallery.html">Visit Galley</a>
@@ -79,13 +79,20 @@
         <!-- About Section -->
         <section class="about-section">
             <h2 class="section-title">About Mreva Media</h2>
-            <p>
-                At <strong>Mreva Media</strong>, we are passionate about capturing the essence of your most cherished moments. 
-                Based in Mandeni, KwaZulu-Natal, we specialize in professional photography, videography, and drone services for weddings, graduations, traditional ceremonies, and more. 
-                Our dedicated team combines creativity with technical expertise to deliver stunning visuals that tell your unique story. 
-                Whether you're looking for elegant wedding photos, dynamic graduation videos, or breathtaking aerial shots, 
-                Mreva Media is here to bring your vision to life with professionalism and a personal touch.
-            </p>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>
+                        At <strong>Mreva Media</strong>, we don't just document events, we craft visual stories that celebrate culture, emotion, and connection. 
+                        Proudly based in <span class="location-badge">Mandeni, KwaZulu-Natal</span>, our team brings over 5 years of experience in photography, videography, and drone services. 
+                        Whether it's a wedding, graduation, or traditional ceremony, we capture the essence of your moment with creativity and care.
+                    </p>
+                    <a class="about-cta-btn" href="about.html">Learn More About Us</a>
+                </div>
+
+                <div class="about-image">
+                    <img src="images/team.jpg" alt="Behind the scenes at Mreva Media">
+                </div>
+            </div>
         </section>
 
         <!-- OUR SERVICES -->
@@ -114,6 +121,11 @@
                 <h2 class="section-title">Explore Our Work</h2>
                 <p>Discover a curated selection of our finest photography and videography projects, showcasing the artistry and dedication we bring to every event.</p>
                 <a class="cta-btn primary" href="gallery.html">View Full Gallery</a>
+                <div class="gallery-highlights">
+                    <div class="highlight">✅ 100+ happy clients</div>
+                    <div class="highlight">📸 100+ moments captured</div>
+                    <div class="highlight">🎥 5+ years of storytelling</div>
+                </div>
             </div>
             <div class="gallery-image">
                 <img src="images/hero-image.png" alt="Gallery Preview" width="350"/>
@@ -129,6 +141,7 @@
                 <div class="reason">🎯 Sharp creative team</div>
                 <div class="reason">💬 Clear client communication</div>
                 <div class="reason">💰 Packages for every budget</div>
+                <div class="reason">📸 Creative eye, Professional results</div>
             </div>
         </section>
 
@@ -156,17 +169,48 @@
             <img src="images/donation.jpg" alt="Donation Event" class="impact-img">
         </section>
 
-        <!-- BOTTOM CTA -->
-        <section class="bottom-cta">
-            <hr>
-            <h4>Ready to work with us? <a class="bottom-contact" href="booking.html">BOOK NOW</a></h4>
-            <hr>
-        </section>
+        <!-- Footer -->
+        <footer class="site-footer">
+            <div class="footer-content">
+                <!-- Column 1: Logo + Info -->
+                <div class="footer-brand">
+                    <img src="images/white-logo.png" alt="Mreva Media Logo" width="100">
+                    <p>Capturing timeless memories with creativity and passion.</p>
+                    <p>Reg: 2022/789204/07</p>
+                </div>
 
-        <!--Developed by Peacemaker Dev-->
-        <footer>
-            <p>&copy; <span id="year"></span> MREVA MEDIA (Pty) Ltd | Reg: 2022/789204/07</p>
-            <p>Powered by Peacemaker Dev</p>
+                <!-- Column 2: Quick Links -->
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="booking.html">Booking</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+
+                <!-- Column 3: Contact -->
+                <div class="footer-contact">
+                    <h4>Contact Us</h4>
+                    <p>📞 +27 79 048 1198</p>
+                    <p>📧 <a href="mailto:mrevasimiso17@gmail.com">mrevasimiso17@gmail.com</a></p>
+                    <p>📍 Mandeni, KwaZulu-Natal</p>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/share/16ppGU4Q1E/"><img src="images/facebook.png" alt="Facebook"></a>
+                        <a href="https://www.instagram.com/mrevawangempela?igsh=MW5jc2gyOW5hZHlmYw=="><img src="images/instagram.png" alt="Instagram"></a>
+                        <a href="https://youtube.com/@mrevamedia?si=SPGLHBB0ZnPLoy3c"><img src="images/youtube.png" alt="YouTube"></a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Bottom Line -->
+            <div class="footer-bottom">
+                <p>&copy; <span id="year"></span> MREVA MEDIA (Pty) Ltd. All Rights Reserved.</p>
+                <p>Powered by <strong>Peacemaker Dev</strong></p>
+                <p><a href="terms.html">Terms & Conditions</a> | <a href="privacy.html">Privacy Policy</a></p>
+            </div>
         </footer>
         <script>
             document.getElementById("year").textContent = new Date().getFullYear();
