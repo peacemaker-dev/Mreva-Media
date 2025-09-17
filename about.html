@@ -38,15 +38,24 @@
     </head>
     <body>
         <!--TOP PANEL-->
-        <div class="nav-panel">
-            <img src="images/white-logo.png" alt="Mreva Media Logo" width="90"/>
+        <header class="nav-panel">
+            <div class="nav-logo">
+                <img src="images/white-logo.png" alt="Mreva Media Logo" width="90" />
+            </div>
+            <nav class="nav-menu" id="navMenu">
             <a class="nav-links" href="index.html">Home</a>
             <a class="nav-links" href="services.html">Services</a>
             <a class="nav-links" href="gallery.html">Gallery</a>
             <a class="nav-links" href="contact.html">Contact</a>
             <a class="nav-links" href="about.html">About</a>
-            <a class="nav-links" href="faq.html">FAQs</a>
-        </div>
+            </nav>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+        </header>
+
         <h1>About <span style="color:#f9a825;">Us</span></h1>
         <div class="logo-box"><img class="logo-image" src="images/gold-logo.png" alt="Mreva Media Logo"/></div>
         
@@ -157,6 +166,15 @@
         </footer>
         <script>
             document.getElementById("year").textContent = new Date().getFullYear();
+
+            document.addEventListener('DOMContentLoaded', function() {
+                const navToggle = document.getElementById('navToggle');
+                const navMenu = document.getElementById('navMenu');
+                navToggle.addEventListener('click', function() {
+                navMenu.classList.toggle('active');
+                navToggle.classList.toggle('active');
+                });
+            });
         </script>
     </body>
 </html>

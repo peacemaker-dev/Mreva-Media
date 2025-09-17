@@ -37,15 +37,23 @@
       <link rel="stylesheet" href="style.css">
   </head>
   <body>
-    <div class="nav-panel">
-      <img src="images/white-logo.png" alt="Mreva Media Logo" width="90"/>
+    <header class="nav-panel">
+      <div class="nav-logo">
+          <img src="images/white-logo.png" alt="Mreva Media Logo" width="90" />
+      </div>
+      <nav class="nav-menu" id="navMenu">
       <a class="nav-links" href="index.html">Home</a>
       <a class="nav-links" href="services.html">Services</a>
       <a class="nav-links" href="gallery.html">Gallery</a>
       <a class="nav-links" href="contact.html">Contact</a>
       <a class="nav-links" href="about.html">About</a>
-      <a class="nav-links" href="faq.html">FAQs</a>
-    </div>
+      </nav>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+      </button>
+    </header>
 
     <!-- HERO SECTION -->
     <section class="hero">
@@ -108,6 +116,15 @@
       function closeModal() {
         document.getElementById('imageModal').style.display = 'none';
       }
+
+      document.addEventListener('DOMContentLoaded', function() {
+                const navToggle = document.getElementById('navToggle');
+                const navMenu = document.getElementById('navMenu');
+                navToggle.addEventListener('click', function() {
+                navMenu.classList.toggle('active');
+                navToggle.classList.toggle('active');
+                });
+            });
     </script>
   </body>
 </html>
