@@ -37,15 +37,23 @@
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
-    <div class="nav-panel">
-        <img src="images/white-logo.png" alt="Mreva Media Logo" width="90"/>
-        <a class="nav-links" href="index.html">Home</a>
-        <a class="nav-links" href="services.html">Services</a>
-        <a class="nav-links" href="gallery.html">Gallery</a>
-        <a class="nav-links" href="contact.html">Contact</a>
-        <a class="nav-links" href="about.html">About</a>
-        <a class="nav-links" href="faq.html">FAQs</a>
-    </div>
+    <header class="nav-panel">
+      <div class="nav-logo">
+          <img src="images/white-logo.png" alt="Mreva Media Logo" width="90" />
+      </div>
+      <nav class="nav-menu" id="navMenu">
+      <a class="nav-links" href="index.html">Home</a>
+      <a class="nav-links" href="services.html">Services</a>
+      <a class="nav-links" href="gallery.html">Gallery</a>
+      <a class="nav-links" href="contact.html">Contact</a>
+      <a class="nav-links" href="about.html">About</a>
+      </nav>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+      </button>
+    </header>
 
     <!-- HERO SECTION -->
     <section class="hero">
@@ -56,43 +64,45 @@
         </p>
     </section>
 
-    <!--MINI GALLERY-->
-    <section class="mini-gallery">
-      <h3>A Glimpse of Our Photography</h3>
-      <div class="gallery-grid">
-        <img src="images/drone (1).jpg" alt="Drone moment" loading="lazy" onclick="openModal(this.src)">
-        <img src="images/drone (2).jpg" alt="Drone moment" loading="lazy" onclick="openModal(this.src)">
-        <img src="images/drone (5).jpg" alt="Drone moment" loading="lazy" onclick="openModal(this.src)">
-        <img src="images/drone (4).jpg" alt="Drone moment" loading="lazy" onclick="openModal(this.src)">
-        <img src="images/drone (3).jpg" alt="Drone moment" loading="lazy" onclick="openModal(this.src)">
-        <img src="images/drone (6).jpg" alt="Drone moment" loading="lazy" onclick="openModal(this.src)">
-      </div>
-    </section>
-
-    <!-- IMAGE MODAL (Lightbox) -->
-    <div class="image-modal" id="imageModal">
-      <span class="close-btn" onclick="closeModal()">&times;</span>
-      <img id="modalImage" src="" alt="Zoomed Image">
-    </div>
-
-    <div class="container" style="margin:20px auto;">
-        <h3>Common Uses:</h3>
-        <ul class="service-list">
-        <li>Weddings & Outdoor Ceremonies</li>
-        <li>Umembeso, Umemulo & Cultural Events</li>
-        <li>Real Estate or Bussiness Showcase</li>
-        <li>Creative Shoots & Social Media Content</li>
-        </ul>
-        <div style="text-align: center; margin-top: 20px;">
-          <a href="booking.html" class="cta-btn">Capture Above</a>
+    <main class="drone-main-content">
+      <!--MINI GALLERY-->
+      <section class="mini-gallery">
+        <h3>A Glimpse of Our Photography</h3>
+        <div class="gallery-grid">
+          <img src="images/drone (1).jpg" alt="Drone moment" loading="lazy" onclick="openModal(this.src)">
+          <img src="images/drone (2).jpg" alt="Drone moment" loading="lazy" onclick="openModal(this.src)">
+          <img src="images/drone (5).jpg" alt="Drone moment" loading="lazy" onclick="openModal(this.src)">
+          <img src="images/drone (4).jpg" alt="Drone moment" loading="lazy" onclick="openModal(this.src)">
+          <img src="images/drone (3).jpg" alt="Drone moment" loading="lazy" onclick="openModal(this.src)">
+          <img src="images/drone (6).jpg" alt="Drone moment" loading="lazy" onclick="openModal(this.src)">
         </div>
-    </div>
+      </section>
+
+      <!-- IMAGE MODAL (Lightbox) -->
+      <div class="image-modal" id="imageModal">
+        <span class="close-btn" onclick="closeModal()">&times;</span>
+        <img id="modalImage" src="" alt="Zoomed Image">
+      </div>
+
+      <div class="container" style="margin:20px auto;">
+          <h3>Common Uses:</h3>
+          <ul class="service-list">
+          <li>Weddings & Outdoor Ceremonies</li>
+          <li>Umembeso, Umemulo & Cultural Events</li>
+          <li>Real Estate or Bussiness Showcase</li>
+          <li>Creative Shoots & Social Media Content</li>
+          </ul>
+          <div style="text-align: center; margin-top: 20px;">
+            <a href="booking.html" class="cta-btn">Capture Above</a>
+          </div>
+      </div>
+  </main>
 
     <!--Developed by Peacemaker Dev-->
-    <footer>
-      <p>&copy; <span id="year"></span> MREVA MEDIA (Pty) Ltd | Reg: 2022/789204/07</p>
-      <p>Powered by Peacemaker Dev</p>
-    </footer>
+        <footer class="multi-page-footer">
+            <p>&copy; <span id="year"></span> MREVA MEDIA (Pty) Ltd | Reg: 2022/789204/07</p>
+            <p>Powered by Peacemaker Dev</p>
+        </footer>
     <script>
          document.getElementById("year").textContent = new Date().getFullYear();
     </script>

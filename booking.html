@@ -36,7 +36,6 @@
         <!-- Stylesheet -->
         <link rel="stylesheet" href="style.css">
     </head>
-
     <body>
         <!--TOP PANEL-->
             <header class="nav-panel">
@@ -57,105 +56,136 @@
                 </button>
             </header>
 
-        <h1>BOOK <span style="color:#f9a825;">HERE</span></h1>
-        <h4>Please <span style="color:red;">fill</span> in the details below.</h4>
-        <form id="booking-form" action="https://formsubmit.co/mrevasimiso17@gmail.com" method="POST">
-            <!-- Hidden Inputs -->
-            <input type="hidden" name="_captcha" value="false">
-            <input type="hidden" name="_next" value="https://www.mrevamedia.co.za/thank-you.html">
-    
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required minlength="2" pattern="[A-Za-z\s]+" />*<br/>
-            <label for="number">Contact:</label>
-            <input type="tel" name="number" id="number" required 
-                pattern="^0[6-8][0-9]{8}$" 
-                placeholder="e.g. 0712345678"
-                title="Enter a valid South African number e.g. 0712345678"/>*</br>
-            <label for="email">Email:</label>
-            <input type="email" name="email" id="email" ><br/>
-            <label for="date">Date: </label>
-            <input type="date" name="date" id="date" required>*<br/>
-            <label for="time">Time: </label>
-            <input type="time" name="time" id="time"><br/>
-            <label for="location">Location: </label>
-            <input type="text" name="location" id="location" required>*<br/>
+        <main class="booking-main-content">
+            <!-- Booking page header -->
+        <section class="booking-intro">
+            <h1>Book <span style="color:#f9a825;">Your Session</span></h1>
+            <p>Complete the form below to reserve your date. We’ll get back to you with confirmation and package details.</p>
+        </section>
+           <form id="booking-form" action="https://formsubmit.co/mrevasimiso17@gmail.com" method="POST">
+                <!-- Hidden Inputs -->
+                <input type="hidden" name="_captcha" value="false">
+                <input type="hidden" name="_next" value="https://www.mrevamedia.co.za/thank-you.html">
 
-            <!-- Service selection dropdown -->
-            <label for="services">Service Needed:</label>
-            <select name="service" required>
-                <option value="">----- Select a Service -----</option>
-                <option value="white wedding">White Wedding Only</option>
-                <option value="traditional wedding">Traditional Wedding Only</option>
-                <option value="combined wedding">White & Tradditional Wedding</option>
-                <option value="umemulo">Umemulo</option>
-                <option value="umembeso">Umembeso</option>
-                <option value="umhlonyane">Umhlonyane</option>
-                <option value="graduation">Graduation</option>
-                <option value="photography">Photography Only</option>
-                <option value="videography">Videography Only</option>
-                <option value="drone">Drone Coverage Only</option>
-            </select>*<br/>
+                <!-- Contact Info -->
+                <fieldset>
+                    <legend>Contact Information</legend>
+                    <label for="name">Full Name:</label>
+                    <input type="text" id="name" name="name" required minlength="2" pattern="[A-Za-z\s]+" />
 
-            <!-- Package selection dropdown -->
-            <label for="package">Package:</label>
-            <select name="package" id="package" required>
-                <option value="">-- Select a Package --</option>
-                <option value="basic">Basic</option>
-                <option value="standard">Standard</option>
-                <option value="premium">Premium</option>
-            </select><br/>
+                    <label for="number">Contact Number:</label>
+                    <input type="tel" name="number" id="number" required 
+                        pattern="^0[6-8][0-9]{8}$" 
+                        placeholder="e.g. 0712345678"
+                        title="Enter a valid South African number e.g. 0712345678"/>
 
-            <label for="message">Message:</label><br/>
-            <textarea name="message" id="message" rows="3" cols="40" placeholder="E.g. We want both Umemulo and Graduation on the same day, or any other details you want to add..."></textarea><br/>
-            <input type="checkbox" name="terms" id="terms-checkbox" required>
-            <label for="terms-checkbox" class="checkbox-label">I have read and agree to the Terms and Conditions listed below.</label><br/>
-            <button type="submit" id="submit">Submit</button>
-        </form>
-        <h4><strong>NOTE:</strong> WhatsApp or Call us directly - 079 048 1198</h4>
+                    <label for="email">Email Address:</label>
+                    <input type="email" name="email" id="email" />
+                </fieldset>
 
-        <!--Terms and conditions-->
-        <div class="terms-box">
-            <h4>Mreva Media PTY LTD (Reg. 2022/789204/07) - Terms & Conditions</h4>
-            <ol>
-                <li><strong>Deposit Requirement:</strong> A deposit of <strong>50%</strong> is required to secure and confirm your booking. This guarantees your event date is reserved exclusively for you.</li>
-                <li><strong>Deposit Deadline:</strong> The deposit must be paid <strong>upon booking confirmation</strong>. If not received, the date will remain open and may be assigned to another client.</li>
-                <li><strong>Balance Payment:</strong> The remaining <strong>50%</strong> must be paid <strong>on or before the event day</strong>, prior to the start of the shoot or coverage.</li>
-                <li><strong>Transport Fee:</strong> Packages <strong>do not include transport costs</strong>. Clients are responsible for transport fees, which are calculated based on distance and will be quoted separately.</li>
-                <li><strong>Working Hours:</strong> Standard working hours are from <strong>08:00 AM to 17:00 PM</strong>. Any work required <strong>outside these hours</strong> may incur an <strong>additional hourly fee</strong> depending on the package and nature of the event.</li>
-                <li><strong>Extra Time & Overtime:</strong> If your event exceeds the agreed hours, <strong>additional charges apply</strong>. These rates vary by service and will be communicated upon booking confirmation.</li>
-                <li><strong>Combined Events (Same Day):</strong> We accommodate <strong>combined ceremonies held on the same day</strong> ,  including:
-                <ul>
-                    <li>White wedding + Traditional (Umabo)</li>
-                    <li>Umemulo + Umkhehlo</li>
-                    <li>Umembeso + Wedding Reception</li>
-                    <li>Any two or more ceremonies or functions combined</li>
-                </ul>
-                A custom package will be created to ensure proper coverage and fair pricing.
-                </li>
-                <li><strong>Event Types Covered:</strong> Our packages apply to all traditional and modern celebrations, including but not limited to:
-                <ul>
-                    <li>White Weddings</li>
-                    <li>Traditional Ceremonies</li>
-                    <li>Umembeso</li>
-                    <li>Umemulo</li>
-                    <li>Umkhehlo</li>
-                    <li>Umhlonyane</li>
-                    <li>Graduations</li>
-                    <li>Photoshoots</li>
-                    <li>Private Events</li>
-                </ul>
-                </li>
-                <li><strong>Booking Confirmation:</strong> Submission of the booking form is not confirmation. The booking is only confirmed once deposit payment is received and official confirmation is sent by Mreva Media.</li>
-                <li><strong>Rescheduling Policy:</strong> Event rescheduling must be requested at least <strong>72 hours in advance</strong>. New dates are subject to availability. Any additional transport or accommodation costs must be covered by the client.</li>
-                <li><strong>Usage Rights:</strong> Mreva Media retains the right to use selected images and videos for promotional purposes, including but not limited to social media, website, and advertising. Clients who prefer their content to remain private must inform us in writing <strong>before the event date</strong> and negotiations will be made.</li>
-                <li><strong>Multi-Day Bookings & Accommodation:</strong> If the event spans more than one day, the client must provide secure and appropriate accommodation for the Mreva Media team. If accommodation is provided at the client's home or residence, it must be a private and lockable room. 
-                    <strong>Mreva Media will not be held liable</strong> for any loss or damage of equipment or personal belongings during the stay. The client accepts full responsibility should any loss or incident occur in such cases.
-                </li>
-            </ol>
-        </div>
+                <!-- Event Details -->
+                <fieldset>
+                    <legend>Event Details</legend>
+                    <label for="date">Event Date:</label>
+                    <input type="date" name="date" id="date" required>
 
+                    <label for="time">Preferred Time:</label>
+                    <input type="time" name="time" id="time">
+
+                    <label for="location">Event Location:</label>
+                    <input type="text" name="location" id="location" required>
+                </fieldset>
+
+                <!-- Service & Package Selection -->
+                <fieldset>
+                    <legend>Service & Package</legend>
+                    <label for="services">Service Needed:</label>
+                    <select name="service" required>
+                        <option value="">-- Select a Service --</option>
+                        <option value="white wedding">White Wedding Only</option>
+                        <option value="traditional wedding">Traditional Wedding Only</option>
+                        <option value="combined wedding">White & Traditional Wedding</option>
+                        <option value="umemulo">Umemulo</option>
+                        <option value="umembeso">Umembeso</option>
+                        <option value="umhlonyane">Umhlonyane</option>
+                        <option value="graduation">Graduation</option>
+                        <option value="photography">Photography Only</option>
+                        <option value="videography">Videography Only</option>
+                        <option value="drone">Drone Coverage Only</option>
+                    </select>
+
+                    <label for="package">Package:</label>
+                    <select name="package" id="package" required>
+                        <option value="">-- Select a Package --</option>
+                        <option value="basic">Basic</option>
+                        <option value="standard">Standard</option>
+                        <option value="premium">Premium</option>
+                    </select>
+                </fieldset>
+
+                <!-- Additional Message -->
+                <label for="message">Additional Details:</label>
+                <textarea name="message" id="message" rows="4" placeholder="E.g. We want both Umemulo and Graduation on the same day, or any other details you want to add..."></textarea>
+
+                <!-- Terms Agreement -->
+                <div class="terms-agreement">
+                    <input type="checkbox" name="terms" id="terms-checkbox" required>
+                    <label for="terms-checkbox" class="checkbox-label">I have read and agree to the <a href="#terms">Terms and Conditions</a>.</label>
+                </div>
+
+                <!-- Submit Button -->
+                <button type="submit" id="submit">Submit Booking</button>
+            </form>
+
+            <!-- Direct Contact Note -->
+            <section class="direct-contact">
+                <h4><strong>NOTE:</strong> WhatsApp or Call us directly - <a href="https://wa.me/27790481198" class="checkbox-label">079 168 1131</a></h4>
+            </section>
+
+            <!-- Terms and Conditions -->
+            <section class="terms-box" id="terms-box">
+                <h4>Mreva Media PTY LTD - Terms & Conditions</h4>
+                <ol>
+                    <li><strong>Deposit Requirement:</strong> A deposit of <strong>50%</strong> is required to secure and confirm your booking. This guarantees your event date is reserved exclusively for you.</li>
+                    <li><strong>Deposit Deadline:</strong> The deposit must be paid <strong>upon booking confirmation</strong>. If not received, the date will remain open and may be assigned to another client.</li>
+                    <li><strong>Balance Payment:</strong> The remaining <strong>50%</strong> must be paid <strong>on or before the event day</strong>, prior to the start of the shoot or coverage.</li>
+                    <li><strong>Transport Fee:</strong> Packages <strong>do not include transport costs</strong>. Clients are responsible for transport fees, which are calculated based on distance and will be quoted separately.</li>
+                    <li><strong>Working Hours:</strong> Standard working hours are from <strong>08:00 AM to 17:00 PM</strong>. Any work required <strong>outside these hours</strong> may incur an <strong>additional hourly fee</strong> depending on the package and nature of the event.</li>
+                    <li><strong>Extra Time & Overtime:</strong> If your event exceeds the agreed hours, <strong>additional charges apply</strong>. These rates vary by service and will be communicated upon booking confirmation.</li>
+                    <li><strong>Combined Events (Same Day):</strong> We accommodate <strong>combined ceremonies held on the same day</strong> ,  including:
+                        <ul>
+                            <li>White wedding + Traditional (Umabo)</li>
+                            <li>Umemulo + Umkhehlo</li>
+                            <li>Umembeso + Wedding Reception</li>
+                            <li>Any two or more ceremonies or functions combined</li>
+                        </ul>
+                        A custom package will be created to ensure proper coverage and fair pricing.
+                    </li>
+                    <li><strong>Event Types Covered:</strong> Our packages apply to all traditional and modern celebrations, including but not limited to:
+                        <ul>
+                            <li>White Weddings</li>
+                            <li>Traditional Ceremonies</li>
+                            <li>Umembeso</li>
+                            <li>Umemulo</li>
+                            <li>Umkhehlo</li>
+                            <li>Umhlonyane</li>
+                            <li>Graduations</li>
+                            <li>Photoshoots</li>
+                            <li>Private Events</li>
+                        </ul>
+                    </li>
+                    <li><strong>Booking Confirmation:</strong> Submission of the booking form is not confirmation. The booking is only confirmed once deposit payment is received and official confirmation is sent by Mreva Media.</li>
+                    <li><strong>Rescheduling Policy:</strong> Event rescheduling must be requested at least <strong>72 hours in advance</strong>. New dates are subject to availability. Any additional transport or accommodation costs must be covered by the client.</li>
+                    <li><strong>Usage Rights:</strong> Mreva Media retains the right to use selected images and videos for promotional purposes, including but not limited to social media, website, and advertising. Clients who prefer their content to remain private must inform us in writing <strong>before the event date</strong> and negotiations will be made.</li>
+                    <li><strong>Multi-Day Bookings & Accommodation:</strong> If the event spans more than one day, the client must provide secure and appropriate accommodation for the Mreva Media team. If accommodation is provided at the client's home or residence, it must be a private and lockable room. 
+                        <strong>Mreva Media will not be held liable</strong> for any loss or damage of equipment or personal belongings during the stay. The client accepts full responsibility should any loss or incident occur in such cases.
+                    </li>
+                </ol>
+            </section>
+        </main>
+        
         <!--Developed by Peacemaker Dev-->
-        <footer>
+        <footer class="multi-page-footer">
             <p>&copy; <span id="year"></span> MREVA MEDIA (Pty) Ltd | Reg: 2022/789204/07</p>
             <p>Powered by Peacemaker Dev</p>
         </footer>

@@ -37,16 +37,24 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- TOP PANEL -->
-    <div class="nav-panel">
-        <img src="images/white-logo.png" alt="Mreva Media Logo" width="90"/>
-        <a class="nav-links" href="index.html">Home</a>
-        <a class="nav-links" href="services.html">Services</a>
-        <a class="nav-links" href="gallery.html">Gallery</a>
-        <a class="nav-links" href="contact.html">Contact</a>
-        <a class="nav-links" href="about.html">About</a>
-        <a class="nav-links" href="faq.html">FAQs</a>
-    </div>
+    <!-- NAVIGATION PANEL -->
+    <header class="nav-panel">
+      <div class="nav-logo">
+          <img src="images/white-logo.png" alt="Mreva Media Logo" width="90" />
+      </div>
+      <nav class="nav-menu" id="navMenu">
+      <a class="nav-links" href="index.html">Home</a>
+      <a class="nav-links" href="services.html">Services</a>
+      <a class="nav-links" href="gallery.html">Gallery</a>
+      <a class="nav-links" href="contact.html">Contact</a>
+      <a class="nav-links" href="about.html">About</a>
+      </nav>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+      </button>
+    </header>
 
     <div class="hero">
         <h1>Thank You for Your Booking!</h1>
@@ -59,11 +67,11 @@
         <a href="services.html" class="bottom-contact">Explore Our Services</a>
     </div>
 
-    <!-- Footer -->
-    <footer>
-        <p>&copy; <span id="year"></span> MREVA MEDIA (Pty) Ltd | Reg: 2022/789204/07</p>
-        <p>Powered by Peacemaker Dev</p>
-    </footer>
+    <!--Developed by Peacemaker Dev-->
+        <footer class="multi-page-footer">
+            <p>&copy; <span id="year"></span> MREVA MEDIA (Pty) Ltd | Reg: 2022/789204/07</p>
+            <p>Powered by Peacemaker Dev</p>
+        </footer>
 
     <script>
         document.getElementById("year").textContent = new Date().getFullYear();
