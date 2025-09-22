@@ -106,6 +106,14 @@ const galleryData = {
     "images/ceremony/ceremony10.jpg",
     "images/ceremony/ceremony11.jpg",
     "images/ceremony/ceremony12.jpg"
+  ],
+  drone: [
+    "images/drone/drone1.jpg",
+    "images/drone/drone2.jpg",
+    "images/drone/drone3.jpg",
+    "images/drone/drone4.jpg",
+    "images/drone/drone5.jpg",
+    "images/drone/drone6.jpg"
   ]
 };
 

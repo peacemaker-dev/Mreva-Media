@@ -37,6 +37,7 @@
       <link rel="stylesheet" href="style.css">
   </head>
   <body>
+    <!-- NAVIGATION PANEL -->
     <header class="nav-panel">
       <div class="nav-logo">
           <img src="images/white-logo.png" alt="Mreva Media Logo" width="90" />
@@ -56,29 +57,32 @@
     </header>
 
     <!-- HERO SECTION -->
-    <section class="photography-hero">
-      <h1><span style="color:#f9a825;">Photography</span> Services</h1>
-      <p>
-        We capture timeless images for every occasion, from ceremonies like weddings, umembeso, and umemulo, 
-        to portraits and corporate shoots. Our focus is on authentic storytelling, lighting, and emotion.
-      </p>
+    <section class="multi-header">
+      <div class="overlay"></div>
+      <div class="multi-header-content">
+        <h1><span style="color:#f9a825;">Photography</span> Services</h1>
+        <p>
+          Capturing life's most precious moments with creativity and professionalism. From weddings to portraits, we bring your vision to life through our lens.
+        </p>
+      </div>
     </section>
 
     <main class="photography-main-content">
       <!--MINI GALLERY-->
-      <h3>A Glimpse of Our Photography</h3>
-      <section class="mini-gallery">
-        <h4>Photoshoot Moments</h4>
-        <div class="gallery-grid">
-          <img src="images/photoshoot3.jpg" alt="Photoshoot moment" loading="lazy" onclick="openModal(this.src)">
-          <img src="images/photoshoot1.jpg" alt="Photoshoot moment" loading="lazy" onclick="openModal(this.src)">
-          <img src="images/photoshoot2.jpg" alt="Photoshoot moment" loading="lazy" onclick="openModal(this.src)">
-          <img src="images/outdoor5.jpg" alt="Photoshoot moment" loading="lazy" onclick="openModal(this.src)">
-        </div>
+      <section class="mini-gallery" id="photoshoot-gallery">
+          <h2><span class="accent">Photoshoot</span> Moments</h2>
+          <div class="preview-tip">
+              <p class="gallery-tip">Click any image to view and navigate the full gallery.</p>
+          </div>
+          <div class="gallery-grid">
+            <img src="images/photoshoot/photoshoot1.jpg" data-gallery="photoshoot" data-index="0">
+            <img src="images/photoshoot/photoshoot2.jpg" data-gallery="photoshoot" data-index="1">
+            <img src="images/photoshoot/photoshoot3.jpg" data-gallery="photoshoot" data-index="2">
+          </div>
       </section>
 
       <h3>Visit our <a class="gallery-link" href="gallery.html">Gallery</a> for more breathtaking visuals.</h3>
-      <section class="container" style="margin:20px auto;">
+      <section class="container">
         <h3>Covered Occasions:</h3>
         <ul class="service-list">
           <li>Weddings (Traditional, White, Combined)</li>
@@ -86,40 +90,39 @@
           <li>Studio & Outdoor Photoshoots</li>
           <li>Corporate Shoots</li>
         </ul>
-        <div style="text-align: center; margin-top: 20px;">
-          <a href="booking.html" class="cta-btn">Capture Moments</a>
+        <div class="photography-cta">
+          <a href="booking.html" class="photography-cta-btn">Capture Moments</a>
         </div>
       </section>
     </main>
 
-    <!-- IMAGE MODAL (Lightbox) -->
+    <!-- IMAGE MODAL (Slideshow Lightbox) -->
     <div class="image-modal" id="imageModal">
-      <span class="close-btn" onclick="closeModal()">&times;</span>
-      <img id="modalImage" src="" alt="Zoomed Image">
+      <span class="close-btn" onclick="closeModal()">&times;</span><!-- Close Button -->
+
+      <!-- Navigation and the image -->
+      <div class="modal-content">
+        <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
+          <img id="modalImage" src="" alt="Zoomed gallery image">
+        <a class="next" onclick="changeSlide(1)">&#10095;</a>
+      </div>
+      <div class="modal-preview-tip">
+          <p class="modal-gallery-tip">Swipe left/right to view other images.</p>
+      </div>
     </div>
 
     <!--Developed by Peacemaker Dev-->
-        <footer class="multi-page-footer">
-            <p>&copy; <span id="year"></span> MREVA MEDIA (Pty) Ltd | Reg: 2022/789204/07</p>
-            <p>Powered by Peacemaker Dev</p>
-        </footer>
+    <footer class="multi-page-footer">
+      <p>&copy; <span id="year"></span> MREVA MEDIA (Pty) Ltd | Reg: 2022/789204/07</p>
+      <p>Powered by Peacemaker Dev</p>
+    </footer>
+    <script src="gallery.js"></script>
     <script>
+      //Get current year for footer
         document.getElementById("year").textContent = new Date().getFullYear();
-    </script>
-    
-    <!--Action taken when an image is clicked-->
-    <!-- IMAGE MODAL SCRIPT -->
-    <script>
-      function openModal(src) {
-        document.getElementById('modalImage').src = src;
-        document.getElementById('imageModal').style.display = 'flex';
-      }
 
-      function closeModal() {
-        document.getElementById('imageModal').style.display = 'none';
-      }
-
-      document.addEventListener('DOMContentLoaded', function() {
+        //Navigation Toggle
+            document.addEventListener('DOMContentLoaded', function() {
                 const navToggle = document.getElementById('navToggle');
                 const navMenu = document.getElementById('navMenu');
                 navToggle.addEventListener('click', function() {

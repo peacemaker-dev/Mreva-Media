@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Privacy Policy | Mreva Media</title>
+  <meta name="description" content="Read Mreva Media's privacy policy to understand how we collect, use, and protect your personal information.">
+  <meta name="author" content="Mreva Media Pty Ltd">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Privacy Policy | Mreva Media">
+  <meta property="og:description" content="Learn how Mreva Media protects your privacy and handles your information.">
+  <meta property="og:url" content="https://mrevamedia.co.za/privacy.html">
+  <meta property="og:type" content="website">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- NAVIGATION PANEL -->
+  <header class="nav-panel">
+    <div class="nav-logo">
+      <img src="images/white-logo.png" alt="Mreva Media Logo" width="90" />
+    </div>
+    <nav class="nav-menu" id="navMenu">
+      <a class="nav-links" href="index.html">Home</a>
+      <a class="nav-links" href="services.html">Services</a>
+      <a class="nav-links" href="gallery.html">Gallery</a>
+      <a class="nav-links" href="contact.html">Contact</a>
+      <a class="nav-links" href="about.html">About</a>
+    </nav>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+    </button>
+  </header>
+
+  <!-- HERO -->
+  <section class="multi-header">
+    <div class="overlay"></div>
+    <div class="multi-header-content">
+        <h1><span class="accent">Privacy</span> Policy</h1>
+        <p>Your trust matters. Here's how we handle your information.</p>
+    </div>
+  </section>
+
+  <!-- MAIN CONTENT -->
+  <main class="privacy-main-content">
+    <section class="privacy-box">
+      <h2>Information We Collect</h2>
+      <p>
+        When you make a booking, we may collect personal details such as your name, contact information,
+        and event details. This information is required to confirm and deliver our services.
+      </p>
+
+      <h2>How We Use Your Information</h2>
+      <p>
+        Your information is used solely for communication, booking confirmations, and service delivery.
+        We do not sell, rent, or share your personal data with third parties.
+      </p>
+
+      <h2>Media Usage</h2>
+      <p>
+        With your consent, selected images and videos from your event may be used for promotional purposes,
+        including on our website, portfolio, and social media platforms. If you prefer your content to remain private,
+        you may request this in writing before your event.
+      </p>
+
+      <h2>Data Protection</h2>
+      <p>
+        We take reasonable measures to protect your information from unauthorized access, alteration, or disclosure.
+      </p>
+
+      <h2>Your Rights</h2>
+      <p>
+        You have the right to request access to, or deletion of, the personal information we hold about you.
+        To make such requests, please contact us directly.
+      </p>
+
+      <h2>Updates</h2>
+      <p>
+        This Privacy Policy may be updated periodically. Any changes will be posted on this page with the updated date.
+      </p>
+
+      <p><strong>Effective Date:</strong> September 2025</p>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="multi-page-footer">
+    <p>&copy; <span id="year"></span> MREVA MEDIA (Pty) Ltd | Reg: 2022/789204/07</p>
+    <p>Powered by Peacemaker Dev</p>
+  </footer>
+
+  <script>
+    // Footer year
+    document.getElementById("year").textContent = new Date().getFullYear();
+
+    // Navigation Toggle
+    document.addEventListener("DOMContentLoaded", function () {
+      const navToggle = document.getElementById("navToggle");
+      const navMenu = document.getElementById("navMenu");
+      navToggle.addEventListener("click", function () {
+        navMenu.classList.toggle("active");
+        navToggle.classList.toggle("active");
+      });
+    });
+  </script>
+</body>
+</html>
