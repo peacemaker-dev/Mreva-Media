@@ -40,60 +40,114 @@
     </head>
     <body>
         <!--TOP PANEL-->
-        <div class="nav-panel">
-            <img src="images/white-logo.png" alt="Mreva Media Logo" width="90"/>
-            <a class="nav-links" href="index.html">Home</a>
-            <a class="nav-links" href="services.html">Services</a>
-            <a class="nav-links" href="gallery.html">Gallery</a>
-            <a class="nav-links" href="contact.html">Contact</a>
-            <a class="nav-links" href="about.html">About</a>
-            <a class="nav-links" href="faq.html">FAQs</a>
+        <div class="hero-bg">
+            <header class="nav-panel">
+                <div class="nav-logo">
+                    <img src="images/white-logo.png" alt="Mreva Media Logo" width="90" />
+                </div>
+                <nav class="nav-menu" id="navMenu">
+                    <a class="nav-links" href="index.html">Home</a>
+                    <a class="nav-links" href="services.html">Services</a>
+                    <a class="nav-links" href="gallery.html">Gallery</a>
+                    <a class="nav-links" href="contact.html">Contact</a>
+                    <a class="nav-links" href="about.html">About</a>
+                </nav>
+                <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
+            </header>
+
+            <!-- HERO SECTION -->
+            <section class="hero">
+                <div class="hero-content">
+                    <span class="company-name">MREVA MEDIA</span>
+                    <h2>Capturing moments that matter.<br/>Cinematic visuals, timeless memories.</h2>
+                    <p>Turn your special day into lasting memories with cinematic photography and videography for weddings, graduations, and cultural celebrations.</p>
+                    <div class="cta-buttons">
+                        <a class="cta-btn primary" href="booking.html">Book Now</a>
+                        <a class="cta-btn secondary" href="gallery.html">Visit Galley</a>
+                    </div>
+                </div>
+                <div class="hero-visual">
+                    <img src="images/gold-logo.png" alt="Mreva Media Logo">
+                </div>
+            </section>
         </div>
-        <!-- HERO SECTION -->
-        <section class="hero">
-            <h1>MREVA MEDIA</h1>
-            <p>Capturing moments that matter. Cinematic visuals, timeless memories.</p>
-            <a class="cta-btn" href="booking.html">Book Now</a>
+
+        <!-- About Section -->
+        <section class="about-section">
+            <h2 class="section-title">About Mreva Media</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>
+                        At <strong>Mreva Media</strong>, we don't just document events, we craft visual stories that celebrate culture, emotion, and connection. 
+                        Proudly based in <span class="location-badge">Mandeni, KwaZulu-Natal</span>, our team brings over 5 years of experience in photography, videography, and drone services. 
+                        Whether it's a wedding, graduation, or traditional ceremony, we capture the essence of your moment with creativity and care.
+                    </p>
+                    <a class="about-cta-btn" href="about.html">Learn More About Us</a>
+                </div>
+                <div class="about-image">
+                    <img src="images/team/team.jpg" alt="Behind the scenes at Mreva Media">
+                </div>
+            </div>
         </section>
 
         <!-- OUR SERVICES -->
-        <h2 class="section-title">Our Core Services</h2>
-        <div class="card-grid">
-            <div class="card" onclick="window.location.href='photography.html'">
-                <img class="icon" src="images/camera-icon.png" alt="Camera Icon" width="50"/>
-                <p>Photography</p>
+        <section class="services-intro">
+            <h2 class="section-title">Our Core Services</h2>
+            <p>At Mreva Media, we specialize in capturing life's most important moments with a blend of creativity and professionalism. Our core services include:</p> 
+            <div class="card-grid">
+                <div class="card" onclick="window.location.href='photography.html'">
+                    <img class="icon" src="images/icon/camera-icon.png" alt="Camera Icon" width="50"/>
+                    <p>Photography</p>
+                </div>
+                <div class="card" onclick="window.location.href='video.html'">
+                    <img class="icon" src="images/icon/video-cam.png" alt="Video Icon" width="50"/>
+                    <p>Videography</p>
+                </div>
+                <div class="card" onclick="window.location.href='drone.html'">
+                    <img class="icon" src="images/icon/drone-icon.png" alt="Drone Icon" width="60"/>
+                    <p>Drone<br/>Coverage</p>
+                </div>
             </div>
-            <div class="card" onclick="window.location.href='video.html'">
-                <img class="icon" src="images/video-cam.png" alt="Video Icon" width="50"/>
-                <p>Videography</p>
-            </div>
-            <div class="card" onclick="window.location.href='drone.html'">
-                <img class="icon" src="images/drone-icon.png" alt="Drone Icon" width="60"/>
-                <p>Drone<br/>Coverage</p>
-            </div>
-        </div>
+        </section>
 
-        <!-- PORTFOLIO HIGHLIGHTS -->
-        <h2 class="section-title">Portfolio Highlights</h2>
-        <div class="card-grid">
-            <div class="card" onclick="window.location.href='wedding.html'">
-                <h4>Wedding</h4>
-                <p>Elegant captures of your most unforgettable day.</p>
+        <!-- Gallery Section -->
+        <section class="gallery-preview-section">
+            <div class="gallery-text-content">
+                <h2 class="section-title">Explore Our Work</h2>
+                <p>Discover a curated selection of our finest photography and videography projects, showcasing the artistry and dedication we bring to every event.</p>
+                <a class="cta-btn primary" href="gallery.html">View Full Gallery</a>
+                <div class="gallery-highlights">
+                    <div class="highlight">✅ 100+ happy clients</div>
+                    <div class="highlight">📸 100+ moments captured</div>
+                    <div class="highlight">🎥 5+ years of storytelling</div>
+                </div>
             </div>
-            <div class="card" onclick="window.location.href='tradditional.html'">
-                <h4>Traditional</h4>
-                <p>Cultural elegance captured with depth and respect.</p>
+            <div class="gallery-image">
+                <img src="images/hero-image.png" alt="Gallery Preview" width="350"/>
             </div>
-            <div class="card" onclick="window.location.href='graduation.html'">
-                <h4>Graduation</h4>
-                <p>Celebrating academic milestones with class and energy.</p>
-            </div>
-        </div>
+        </section>
 
+        <!-- WHY MREVA MEDIA -->
+        <section class="why-us-section">
+            <h2 class="section-title">Why Choose Mreva Media?</h2>
+            <div class="reasons-grid">
+                <div class="reason">✅ Legally Operating Business</div>
+                <div class="reason">⏱️ Fast, reliable delivery</div>
+                <div class="reason">🎯 Sharp creative team</div>
+                <div class="reason">💬 Clear client communication</div>
+                <div class="reason">💰 Packages for every budget</div>
+                <div class="reason">📸 Creative eye, Professional results</div>
+            </div>
+        </section>
 
         <!-- TESTIMONIALS -->
-        <h2 class="section-title">What Clients Say</h2>
-        <div class="testimonials">
+        <section class="testimonial-section">
+            <h2 class="section-title">What Clients Say</h2>
+            <p>Hear from our satisfied clients who have experienced the Mreva Media difference.</p>
             <div class="testimonial-card">
                 <p>"They made our wedding unforgettable!"</p>
                 <strong>~ L. Khumalo</strong>
@@ -102,40 +156,61 @@
                 <p>"Professional, creative, and always on time."</p>
                 <strong>~ A. Zulu</strong>
             </div>
-        </div>
-
-        <!-- WHY MREVA MEDIA -->
-        <h2 class="section-title">Why Choose Mreva Media?</h2>
-        <div class="why-us">
-            <div class="reason">✅ Legally Operating Business</div>
-            <div class="reason">⏱️ Fast, reliable delivery</div>
-            <div class="reason">🎯 Sharp creative team</div>
-            <div class="reason">💬 Clear client communication</div>
-            <div class="reason">💰 Packages for every budget</div>
-            <div class="reason">📸 Creative eye, Proffesional results</div>
-        </div>
+        </section>
 
         <!-- COMMUNITY IMPACT -->
-        <h2 class="section-title">Giving Back</h2>
-        <div class="community-impact">
+        <section class="community-impact">
+            <h2 class="section-title">Giving Back</h2>
             <p>
                 At <strong> Mreva Media</strong>, we believe in more than just capturing moments, we believe in creating them for others too.
                 Our team has proudly donated school shoes to local children in need as part of our mission to uplift and empower our community.
             </p>
             <img src="images/donation.jpg" alt="Donation Event" class="impact-img">
-        </div>
-
-        <!-- BOTTOM CTA -->
-        <section class="bottom-cta">
-            <hr>
-            <h4>Ready to work with us? <a class="bottom-contact" href="booking.html">BOOK NOW</a></h4>
-            <hr>
         </section>
 
-        <!--Developed by Peacemaker Dev-->
-        <footer>
-            <p>&copy; <span id="year"></span> MREVA MEDIA (Pty) Ltd | Reg: 2022/789204/07</p>
-            <p>Powered by Peacemaker Dev</p>
+        <!-- Footer -->
+        <footer class="site-footer">
+            <div class="footer-content">
+                <!-- Column 1: Logo + Info -->
+                <div class="footer-brand">
+                    <img src="images/white-logo.png" alt="Mreva Media Logo" width="100">
+                    <p>Capturing timeless memories with creativity and passion.</p>
+                    <p>Reg: 2022/789204/07</p>
+                </div>
+
+                <!-- Column 2: Quick Links -->
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="booking.html">Booking</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+
+                <!-- Column 3: Contact -->
+                <div class="footer-contact">
+                    <h4>Contact Us</h4>
+                    <p>📞 +27 79 048 1198</p>
+                    <p>📧 <a href="mailto:mrevasimiso17@gmail.com">mrevasimiso17@gmail.com</a></p>
+                    <p>📍 Mandeni, KwaZulu-Natal</p>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/share/16ppGU4Q1E/"><img src="images/icon/facebook.png" alt="Facebook"></a>
+                        <a href="https://www.instagram.com/mrevawangempela?igsh=MW5jc2gyOW5hZHlmYw=="><img src="images/icon/instagram.png" alt="Instagram"></a>
+                        <a href="https://www.tiktok.com/@mrevawangempelamn?_t=ZM-8y9nmJO2ryQ&_r=1"><img src="images/icon/tiktok.png" alt="Tiktok"></a>
+                        <a href="https://youtube.com/@mrevamedia?si=SPGLHBB0ZnPLoy3c"><img src="images/icon/youtube.png" alt="YouTube"></a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Bottom Line -->
+            <div class="footer-bottom">
+                <p>&copy; <span id="year"></span> MREVA MEDIA (Pty) Ltd. All Rights Reserved.</p>
+                <p>Powered by <strong>Peacemaker Dev</strong></p>
+                <p><a href="booking.html#terms-box">Terms & Conditions</a> | <a href="privacy.html">Privacy Policy</a></p>
+            </div>
         </footer>
         <script>
             document.getElementById("year").textContent = new Date().getFullYear();
@@ -146,6 +221,15 @@
                 .then(reg => console.log('✅ Service Worker Registered'))
                 .catch(err => console.error('❌ Service Worker Failed', err));
             }
+
+            document.addEventListener('DOMContentLoaded', function() {
+                const navToggle = document.getElementById('navToggle');
+                const navMenu = document.getElementById('navMenu');
+                navToggle.addEventListener('click', function() {
+                navMenu.classList.toggle('active');
+                navToggle.classList.toggle('active');
+                });
+            });
         </script>
     </body>
 </html>

@@ -38,66 +38,95 @@
     </head>
     <body>
         <!--TOP PANEL-->
-        <div class="nav-panel">
-            <img src="images/white-logo.png" alt="Mreva Media Logo" width="90"/>
+        <header class="nav-panel">
+            <div class="nav-logo">
+                <img src="images/white-logo.png" alt="Mreva Media Logo" width="90" />
+            </div>
+            <nav class="nav-menu" id="navMenu">
             <a class="nav-links" href="index.html">Home</a>
             <a class="nav-links" href="services.html">Services</a>
             <a class="nav-links" href="gallery.html">Gallery</a>
             <a class="nav-links" href="contact.html">Contact</a>
             <a class="nav-links" href="about.html">About</a>
-            <a class="nav-links" href="faq.html">FAQs</a>
-        </div>
-        <h1>About <span style="color:#f9a825;">Us</span></h1>
-        <div class="logo-box"><img class="logo-image" src="images/gold-logo.png" alt="Mreva Media Logo"/></div>
-        
-        <div class="about-team">
-            <p>At <strong>Mreva Media</strong>, we don't just take pictures we tell stories.
-                Based in Mandeni KwaZulu-Natal, we are a creative production company specializing in high-quality photography and videography for all occasions. 
-                From weddings and parties to corporate shoots and personal portraits, our mission is simple: capture moments that matter.
-            </p>
-            <h4>Legal Entity</h4>
-            <p>MREVA MEDIA (Pty) Ltd is an officially registered enterprise (Company Registration No.: 2022/789204/07) dedicated to capturing life's significant moments 
-                through professional photography, videography, and drone services.
-            </p>
-            <h4>Our Journey</h4>
-            <p><strong>Mreva Media</strong> started with a camera, a passion, and a bold idea to capture the moments that truly matter. 
-                What began as weekend shoots and small events quickly turned into a full-scale visual production company trusted by clients across KwaZulu-Natal and nearest provinces. 
-                Over time, we've refined our craft through every frame, every edit, and every shoot. We've worked behind the scenes at weddings, corporate events, private functions, 
-                and content shoots, always chasing that perfect shot that tells a real story.
-                From humble beginnings to becoming a creative team that thrives on detail and energy, our journey is built on consistency, 
-                trust, and the love for making memories last.</p>
-            <h4>Our Vision</h4>
-            <p>To become South Africa's leading creative media company, known for delivering powerful visual stories that connect, inspire, and stand the test of time.
-            </p>
-            <h4> Our Mission</h4>
-            <p>To capture real emotion and authentic moments through professional photography and videography providing high-quality, 
-                client-focused content with creativity, precision, and purpose.
-            </p>
-            <h4>What Drives Us</h4>
-            <p>We're obsessed with good lighting, natural emotion, and clean edits. 
-                Our goal isn't just to make your photos look good, it's to make them feel real. 
-                Every frame is crafted with precision, using top-tier equipment and a creative eye that sees more than just the surface.
-            </p>
-            <h4>Our Equipment</h4>
-            <p>
-                We use professional-grade cameras, lenses, lighting, and drones to deliver crisp, vibrant, and cinematic results. 
-                Our gear includes full-frame DSLRs, mirrorless cameras, stabilizers, and high-resolution drones—ensuring every moment is captured with the best tools available.
-            </p>
-            <div class="equipment-gallery">
-                <img src="images/ronin-video-camera.png" alt="Camera Gear" class="equipment-photo">
-                <img src="images/drone.jpg" alt="Lighting Equipment" class="equipment-photo">
-                <img src="images/photography-gear.png" alt="Drone" class="equipment-photo">
-                <!-- Add more equipment images as needed -->
+            </nav>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+        </header>
+
+        <!-- About Hero Content -->
+        <section class="multi-header">
+            <div class="overlay"></div>
+            <div class="multi-header-content">
+                <h1>About <span style="color:#f9a825;">Mreva Media</span></h1>
+                <p>Driven by passion. Defined by excellence. Learn the story behind Mreva Media and meet the team.</p>
             </div>
-            <h4>Why Choose Mreva Media?</h4>
-            <p>
-                Professional team with sharp creative instincts.<br>
-                Reliable, fast turnaround times.<br>
-                Cutting-edge drone tech for breathtaking aerial views.<br>
-                Packages for every budget.<br>
-                Customized experience for each client.<br>
-                Passionate about what we do, and it shows.
-            </p>
+        </section>
+
+        <!-- About Main Content -->
+        <main class="about-main-content">
+            <div class="about-intro">
+                <p>At <strong>Mreva Media</strong>, we don't just take pictures we tell stories.
+                    Based in Mandeni KwaZulu-Natal, we are a creative production company specializing in high-quality photography and videography for all occasions. 
+                    From weddings and parties to corporate shoots and personal portraits, our mission is simple: capture moments that matter.
+                </p>
+            </div>
+            <div class="legal-info">
+                <h4>Legal Entity</h4>
+                <p>MREVA MEDIA (Pty) Ltd is an officially registered enterprise (Company Registration No.: 2022/789204/07) dedicated to capturing life's significant moments 
+                    through professional photography, videography, and drone services.
+                </p>
+            </div>
+
+            <section class="about-content-section">
+                <!-- Journey -->
+                <h4>Our Journey</h4>
+                <p><strong>Mreva Media</strong> started with a camera, a passion, and a bold idea to capture the moments that truly matter. 
+                    What began as weekend shoots and small events quickly turned into a full-scale visual production company trusted by clients across KwaZulu-Natal and nearest provinces. 
+                    Over time, we've refined our craft through every frame, every edit, and every shoot. We've worked behind the scenes at weddings, corporate events, private functions, 
+                    and content shoots, always chasing that perfect shot that tells a real story.
+                    From humble beginnings to becoming a creative team that thrives on detail and energy, our journey is built on consistency, 
+                    trust, and the love for making memories last.
+                </p>
+
+                <!-- Vision -->
+                <h4>Our Vision</h4>
+                <p>To become South Africa's leading creative media company, known for delivering powerful visual stories that connect, inspire, and stand the test of time.
+                </p>
+
+                <!-- Mission -->
+                <h4> Our Mission</h4>
+                <p>To capture real emotion and authentic moments through professional photography and videography providing high-quality, 
+                    client-focused content with creativity, precision, and purpose.
+                </p>
+
+                <!-- What Drives Us -->
+                <h4>What Drives Us</h4>
+                <p>We're obsessed with good lighting, natural emotion, and clean edits. 
+                    Our goal isn't just to make your photos look good, it's to make them feel real. 
+                    Every frame is crafted with precision, using top-tier equipment and a creative eye that sees more than just the surface.
+                </p>
+
+                <!-- Equipment -->
+                <h4>Our Equipment</h4>
+                <p>
+                    We use professional-grade cameras, lenses, lighting, and drones to deliver crisp, vibrant, and cinematic results. 
+                    Our gear includes full-frame DSLRs, mirrorless cameras, stabilizers, and high-resolution drone ensuring every moment is captured with the best tools available.
+                </p>
+
+                <!-- Why Choose Us -->
+                <h4>Why Choose Mreva Media?</h4>
+                <p>
+                    Professional team with sharp creative instincts.<br>
+                    Reliable, fast turnaround times.<br>
+                    Cutting-edge drone tech for breathtaking aerial views.<br>
+                    Packages for every budget.<br>
+                    Customized experience for each client.<br>
+                    Passionate about what we do, and it shows.
+                </p>
+            </section>
 
             <h4>Giving Back</h4>
             <p>
@@ -110,53 +139,64 @@
                 We're more than just a camera crew, we're memory-makers. Whether you're walking down the aisle, launching a brand, 
                 or throwing the event of the year, we'll be there to catch the best angles of your story.
             </p>
-        </div>
 
-        <!-- TEAM SECTION -->
-        <div class="team-section">
-            <!-- Director Section -->
-            <div class="team-member director">
-                <img src="images/director.jpg" alt="Director Photo" class="team-photo">
-                <h3>Simiso "Mreva" Mngomezulu</h3>
-                <p class="team-role">Founder & Director</p>
-                <p class="team-bio">
-                    A visionary behind the lens, Simiso leads Mreva Media with passion, precision, and purpose.
-                    With years of hands-on experience in photography and videography, he ensures every moment captured is one worth remembering.
-                </p>
-            </div>
+            <!-- TEAM SECTION -->
+            <section class="team-section">
+                <h2>Our Creative Team</h2>
+                <p class="team-intro">Behind every great moment we capture is a crew of passionate creatives who bring skill, energy, and vision to each shoot.</p>
 
-            <h2>Our Creative Team</h2>
-            <p class="team-intro">Behind every great moment we capture is a crew of passionate creatives who bring skill, energy, and vision to each shoot.</p>
-
-            <div class="team-grid">
-                <div class="team-member">
-                    <img src="images/khanyisani.jpg" alt="Khanyisani Mngomezulu Photo" class="team-photo">
-                    <h4>Khanyisani Mngomezulu</h4>
+                <!-- Director Section -->
+                <div class="director">
+                    <h3>Simiso "Mreva" Mngomezulu</h3>
+                    <img src="images/team/director.jpg" alt="Director Photo" class="director-photo">
+                    <p class="team-role">Founder & Director</p>
+                    <p class="team-bio">
+                        A visionary behind the lens, Simiso leads Mreva Media with passion, precision, and purpose.
+                        With years of hands-on experience in photography and videography, he ensures every moment captured is one worth remembering.
+                    </p>
                 </div>
-                <div class="team-member">
-                    <img src="images/mlamuli.jpg" alt="Mlamuli Biyela Photo" class="team-photo">
-                    <h4>Mlamuli Biyela</h4>
+                <div class="team-grid">
+                    <div class="team-member">
+                        <img src="images/team/khanyisani.jpg" alt="Khanyisani Photo" class="team-photo">
+                        <h4>Khanyisani</h4>
+                    </div>
+                    <div class="team-member">
+                        <img src="images/team/mbuso.jpg" alt="Mbuso Photo" class="team-photo">
+                        <h4>Mbuso</h4>
+                    </div>
+                    <div class="team-member">
+                        <img src="images/team/mlamuli.jpg" alt="Mlamuli Photo" class="team-photo">
+                        <h4>Mlamuli</h4>
+                    </div>
+                    <div class="team-member">
+                        <img src="images/team/jb.jpg" alt="Njabulo Photo" class="team-photo">
+                        <h4>Njabulo</h4>
+                    </div>
+                    <div class="team-member">
+                        <img src="images/team/nzuzo.jpg" alt="Nzuzo Photo" class="team-photo">
+                        <h4>Nzuzo</h4>
+                    </div>
+                    <!-- Add more team members here later -->
                 </div>
-                <!-- Add more team members here later -->
-            </div>
-        </div>
-    </div>
-
-        <!-- BOTTOM CTA -->
-        <section class="bottom-cta">
-            <hr>
-                <h4>From Our Story to Yours.
-                <a class="bottom-contact" href="booking.html">BOOK NOW</a></h4>
-            <hr>
-        </section>
+            </section>
+        </main>
 
         <!--Developed by Peacemaker Dev-->
-        <footer>
+        <footer class="multi-page-footer">
             <p>&copy; <span id="year"></span> MREVA MEDIA (Pty) Ltd | Reg: 2022/789204/07</p>
             <p>Powered by Peacemaker Dev</p>
         </footer>
         <script>
             document.getElementById("year").textContent = new Date().getFullYear();
+
+            document.addEventListener('DOMContentLoaded', function() {
+                const navToggle = document.getElementById('navToggle');
+                const navMenu = document.getElementById('navMenu');
+                navToggle.addEventListener('click', function() {
+                navMenu.classList.toggle('active');
+                navToggle.classList.toggle('active');
+                });
+            });
         </script>
     </body>
 </html>
