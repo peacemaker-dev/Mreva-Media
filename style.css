@@ -2460,6 +2460,148 @@ textarea:focus {
         max-width: 98vw;
     }
 }
+
+/************************* Thank you page styles *************************/
+/* Thank You page styles */
+:root{
+  --brand-gold: #f9a825;
+  --brand-violet: #8A2BE2;
+  --bg-dark: #0a0a0a;
+  --panel-dark: rgba(0,0,0,0.6);
+  --muted: #e0e0e0;
+  --white: #ffffff;
+}
+
+/* Page container */
+.thank-main {
+  min-height: 60vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 28px;
+  padding: 48px 20px;
+  background: rgba(0, 0, 0, 0.3);
+  color: var(--white);
+}
+
+/* Hero card */
+.thank-hero {
+  max-width: 900px;
+  width: 100%;
+  text-align: center;
+  background: var(--panel-dark);
+  padding: 36px 28px;
+  border-radius: 14px;
+  box-shadow: 0 8px 36px rgba(138,43,226,0.08);
+  border-top: 3px solid var(--brand-gold);
+  transition: transform 0.28s ease, box-shadow 0.28s ease;
+}
+
+.thank-hero:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 14px 50px rgba(138,43,226,0.14);
+}
+
+.thank-hero h1 {
+  margin: 0 0 12px;
+  font-size: 2.1rem;
+  line-height: 1.05;
+  color: var(--white);
+  letter-spacing: 0.4px;
+}
+
+.thank-hero p {
+  margin: 0 0 18px;
+  color: var(--muted);
+  font-size: 1rem;
+}
+
+/* Primary CTA */
+.thank-cta-btn {
+  display: inline-block;
+  background: var(--brand-gold);
+  color: #141212;
+  font-weight: 700;
+  padding: 12px 26px;
+  border-radius: 28px;
+  text-decoration: none;
+  font-size: 1rem;
+  box-shadow: 0 6px 18px rgba(250,200,60,0.12);
+  transition: transform 0.18s ease, box-shadow 0.18s ease, background 0.18s ease;
+}
+
+.thank-cta-btn:hover,
+.thank-cta-btn:focus {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 30px rgba(138,43,226,0.12);
+  background: #f7bf2d;
+  outline: none;
+}
+
+/* Secondary info area */
+.thank-info {
+  max-width: 900px;
+  width: 100%;
+  text-align: center;
+  color: var(--muted);
+  padding: 18px 22px;
+  border-radius: 10px;
+  background: transparent;
+}
+
+.thank-info p {
+  margin: 0 0 12px;
+  font-size: 0.98rem;
+  color: var(--muted);
+}
+
+/* Secondary link */
+.thank-service-link {
+  color: var(--brand-gold);
+  text-decoration: none;
+  font-weight: 700;
+  padding: 8px 14px;
+  border-radius: 8px;
+  transition: color 0.18s ease, box-shadow 0.18s ease;
+}
+
+.thank-service-link:hover,
+.thank-service-link:focus {
+  color: var(--white);
+  background: linear-gradient(90deg, rgba(138,43,226,0.12), rgba(202,166,3,0.07));
+  box-shadow: 0 6px 18px rgba(138,43,226,0.06);
+  outline: none;
+}
+
+/* small tip text if you want below CTA */
+.thank-tip {
+  margin-top: 10px;
+  font-size: 0.9rem;
+  color: #bfbfbf;
+}
+
+/* Accessibility: visible focus styles */
+a:focus {
+  box-shadow: 0 0 0 3px rgba(138,43,226,0.18);
+  outline: none;
+}
+
+/* Responsive */
+@media (max-width: 760px) {
+  .thank-hero {
+    padding: 26px 18px;
+    border-radius: 10px;
+  }
+  .thank-hero h1 {
+    font-size: 1.6rem;
+  }
+  .thank-hero p { font-size: 0.98rem; }
+  .thank-cta-btn { width: 100%; display: block; text-align: center; }
+  .thank-info { padding: 14px 12px; }
+}
+
+
 /************************* Multi Page Footer *************************/
 .multi-page-footer {
     background-color: #000; 
