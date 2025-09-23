@@ -2488,7 +2488,7 @@ textarea:focus {
 /* Hero card */
 .thank-hero {
   max-width: 900px;
-  width: 100%;
+  width: 90%;
   text-align: center;
   background: var(--panel-dark);
   padding: 36px 28px;
@@ -2524,6 +2524,7 @@ textarea:focus {
   color: #141212;
   font-weight: 700;
   padding: 12px 26px;
+  margin: 0 auto;
   border-radius: 28px;
   text-decoration: none;
   font-size: 1rem;
@@ -2591,13 +2592,23 @@ a:focus {
 @media (max-width: 760px) {
   .thank-hero {
     padding: 26px 18px;
+    margin: 10px auto;
+    justify-content: center;
+    width: 90%;
     border-radius: 10px;
   }
   .thank-hero h1 {
     font-size: 1.6rem;
   }
-  .thank-hero p { font-size: 0.98rem; }
-  .thank-cta-btn { width: 100%; display: block; text-align: center; }
+  .thank-hero p {
+    font-size: 0.98rem; 
+    }
+  .thank-cta-btn {
+     width: 80%; 
+     display: block; 
+     text-align: center; 
+    margin: 0 auto;
+    }
   .thank-info { padding: 14px 12px; }
 }
 
